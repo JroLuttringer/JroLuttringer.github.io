@@ -17,21 +17,21 @@ weight = 30
 
 ### __Best Paper Award of ALGOTEL 21__
 
-For *Le Problème à trois Contraintes: Calcul et Déploiement de Segments de Routage*.
+For *[Le Problème à trois Contraintes: Calcul et Déploiement de Segments de Routage]()*.
 A three-way tie was broken according to the presentation.
 
 
 
 ### __Internet Techincal Comittee/ISOC Paper of the Year 2019__
-For *TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels*.
+For *[TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels]()*.
 
 
 ### __Best Paper Award of TMA 19__
-For *TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels*.
+For *[TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels]()*.
 
 
 ### __Runner Up for Best Open Dataset of TMA 19__
-For *TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels*.
+For *[TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels]()*.
 
 ### __Best Poster Award (doctoral school)__
-For my thesis' poster. Chosen among ~100 Students.
+For my [thesis' poster](). Chosen among ~100 Students.

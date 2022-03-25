@@ -33,10 +33,10 @@ education:
     year: 2022 (Projection)
   - course: MSc in Computer Networks and Embedded Systems
     institution: University of Strasbourg
-    year: 2019
+    year: 2019, with high honors
   - course: BSc in Mathematics and Computer Science
     institution: University of Strasbourg
-    year: 2017
+    year: 2017, with honors
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -71,10 +71,10 @@ highlight_name: true
 ---
 
 
-I am currentlly working on my Ph. D. funded by a governemental fellowship at the University of Strasbourg, in the Networks Teams of the ICube laboratory. 
+I am currentlly working on my Ph. D. funded by a governemental fellowship at the [University of Strasbourg](https://www.unistra.fr/), in the [Networks Teams](https://reseaux.icube.unistra.fr/en/index.php/Home) of the ICube laboratory. 
 
-My work is on constrained path computation for large-scale Segment Routing domains.
-I am also working on OPTIC, a way to mitigate the impact of hot-potato BGP routing on transit traffic and its P4 implementation. My work is supervised by Pr. Cristel Pelsser and Dr. Pascal Mérindol. 
+My work is on constrained path computation for large-scale Segment Routing domains (which lead to the BEST2COP algorithm).
+I am also working on OPTIC, a way to mitigate the impact of hot-potato BGP routing on transit traffic and its P4 implementation. My work is supervised by Pr. Cristel Pelsser and Dr. Pascal Mérindol.
 
 Besides my work on Segment Routing, I have also worked on Internet topology discovery, more precisely on hidden MPLS tunnels revelation in the wild and on large-scale multi-domain tunnels measurements (Geant GN4).
 

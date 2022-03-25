@@ -6,11 +6,10 @@ title: "Let there be light: Revealing hidden MPLS tunnels with TNT"
 # and it will be replaced with their full name and linked to their profile.
 authors:
 - jean-romain-luttringer
-- Thomas Alfroy
+- Yves Vanaubel
 - Pascal Mérindol
-- Quentin Bramas
-- François Clad
-- Cristel Pelsser
+- Benoit Donnet
+- Jean-Jacques Pansiot
 
 # Author notes (optional)
 #author_notes:

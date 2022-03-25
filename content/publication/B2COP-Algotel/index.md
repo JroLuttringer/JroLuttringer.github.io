@@ -17,7 +17,9 @@ authors:
 #- "Equal contribution"
 #- "Equal contribution"
 
-prizes: Best Paper Award
+awards:
+- name: "BEST PAPER AWARD"
+- name: "fake award"
 
 date: "2021-06-01T00:00:00Z"
 doi: ""
@@ -29,7 +31,7 @@ doi: ""
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["1"]
+publication_types: ["9"]
 
 # Publication name and optional abbreviated publication name.
 publication: In *Rencontres Francophones sur les Aspects Algorithmiques des Télécommunications*
@@ -46,9 +48,7 @@ tags: []
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+
 
 url_pdf: 'https://hal.archives-ouvertes.fr/hal-03216327/document'
 url_code: 'https://github.com/talfroy/BEST2COP'
@@ -64,7 +64,7 @@ url_video: 'https://videos.univ-lr.fr/video/2070-le-probleme-a-trois-contraintes
 #image:
 #  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
 #  focal_point: ""
-#  preview_only: false
+#  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
