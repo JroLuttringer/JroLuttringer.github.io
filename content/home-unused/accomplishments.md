@@ -10,7 +10,7 @@ headless: true
 weight: 50
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: 'Awards'
+title: 'Accomplish&shy;ments'
 subtitle:
 
 # Date format
@@ -23,30 +23,29 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- date_end: ""
-  date_start: "2021-05-25"
-  description: "For *Le Problème à trois Contraintes: Calcul et Déploiement de Segments de Routage*. A three-way tie was broken according to the presentation."
-  organization: ALGOTEL
-  title: Best Paper Award
+- certificate_url: https://www.coursera.org
+  date_end: ""
+  date_start: "2021-01-25"
+  description: ""
+  organization: Coursera
+  organization_url: https://www.coursera.org
+  title: Neural Networks and Deep Learning
   url: ""
-- date_end: ""
-  date_start: "2019-10-25"
-  description: "For *TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels*."
-  organization: Internal Technical Comittee
-  title: ITC/ISOC Paper of the Year Award
-  url: ""
-- date_end: ""
-  date_start: "2019-07-25"
-  description: "For *TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels*."
-  organization: TMA
-  title: _Best Paper Award_ (& runner-up for Best Open Dataset)
-  url: ""
-
-- date_end: ""
-  date_start: "2019-07-25"
-  description: "For my thesis' poster."
-  organization: MSII Doctoral Scool
-  title: Best Poster Award
+- certificate_url: https://www.edx.org
+  date_end: ""
+  date_start: "2021-01-01"
+  description: Formulated informed blockchain models, hypotheses, and use cases.
+  organization: edX
+  organization_url: https://www.edx.org
+  title: Blockchain Fundamentals
+  url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+- certificate_url: https://www.datacamp.com
+  date_end: "2020-12-21"
+  date_start: "2020-07-01"
+  description: ""
+  organization: DataCamp
+  organization_url: https://www.datacamp.com
+  title: 'Object-Oriented Programming in R'
   url: ""
 
 design:
