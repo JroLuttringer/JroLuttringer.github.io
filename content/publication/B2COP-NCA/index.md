@@ -44,6 +44,15 @@ tags: []
 # Display this page in the Featured widget?
 featured: false
 
+awards:
+- name: ITC PAPER OF THE YEAR
+  url: "https://itc.committees.comsoc.org/awards/"
+- name: BEST PAPER AWARD
+  url: "https://tma.ifip.org/2019/awards/"
+- name: BEST OPEN DATASET (runner-up)
+  url: "https://tma.ifip.org/2019/awards/"
+
+
 # Custom links (uncomment lines below)
 # links:
 # - name: Custom Link

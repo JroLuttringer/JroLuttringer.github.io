@@ -19,7 +19,7 @@ authors:
 
 awards:
 - name: "BEST PAPER AWARD"
-- name: "fake award"
+  url: "https://apps.univ-lr.fr/cgi-bin/WebObjects/Colloque.woa/wa/menu?code=2721&idMenu=10987&lang=fr"
 
 date: "2021-06-01T00:00:00Z"
 doi: ""
