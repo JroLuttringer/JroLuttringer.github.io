@@ -28,9 +28,12 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: PhD Candidate in Computer Science (Computer networks)
+  - course: Temporary Reseach and Teaching Assistant 
     institution: University of Strasbourg
-    year: 2022 (Projection)
+    year: 2022-2023
+  - course: PhD in Computer Science (Computer networks)
+    institution: University of Strasbourg
+    year: 2022
   - course: MSc in Computer Networks and Embedded Systems
     institution: University of Strasbourg
     year: 2019, with high honors
@@ -70,15 +73,15 @@ email: ""
 highlight_name: true
 ---
 
+I am a PhD in Computer Networks currently working as a research and teaching assistant at the  [University of Strasbourg](https://www.unistra.fr/), in the [Networks Teams](https://reseaux.icube.unistra.fr/en/index.php/Home) of the ICube laboratory. 
 
-I am currentlly working on my Ph. D. funded by a governemental fellowship at the [University of Strasbourg](https://www.unistra.fr/), in the [Networks Teams](https://reseaux.icube.unistra.fr/en/index.php/Home) of the ICube laboratory. 
+My work focuses around routing. In particular, I worked on constrained path computation for large-scale Segment Routing domains (which lead to the BEST2COP and LCA algorithm). I am also working on OPTIC, a way to mitigate the impact of hot-potato BGP routing on transit traffic and its P4 implementation. 
 
-My work is on constrained path computation for large-scale Segment Routing domains (which lead to the BEST2COP algorithm).
-I am also working on OPTIC, a way to mitigate the impact of hot-potato BGP routing on transit traffic and its P4 implementation. My work is supervised by Pr. Cristel Pelsser and Dr. Pascal Mérindol.
+Besides my work on routing, I have also worked on Internet topology discovery, more precisely on hidden MPLS tunnels revelation in the wild and on large-scale multi-domain tunnels measurements (Geant GN4).
 
-Besides my work on Segment Routing, I have also worked on Internet topology discovery, more precisely on hidden MPLS tunnels revelation in the wild and on large-scale multi-domain tunnels measurements (Geant GN4).
+I have also taught ~ 400h in the past 4 years (and thoroughly enjoyed doing so!).
 
-I have also taught ~ 192h in the past 3 years (and thoroughly enjoyed doing so!).
+{{< icon name="dropbox" pack="fas" >}} The material I've created for my courses can be found [Here !](https://shorturl.at/iqzEX)
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
