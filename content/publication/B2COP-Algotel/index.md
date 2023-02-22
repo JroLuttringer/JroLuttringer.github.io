@@ -48,7 +48,11 @@ tags: []
 featured: true
 
 # Custom links (uncomment lines below)
-
+# Publication type.
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
+publication_types: ["1"]
 
 url_pdf: 'https://hal.archives-ouvertes.fr/hal-03216327/document'
 url_code: 'https://github.com/talfroy/BEST2COP'

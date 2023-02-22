@@ -9,7 +9,7 @@ authors:
 superuser: true
 
 # Role/position/tagline
-role: Ph.D. in Computer Science
+role: Ph.D. in Computer Science - Temporary Research and Teaching Assistant
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -28,9 +28,9 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: Temporary Reseach and Teaching Assistant 
-    institution: University of Strasbourg
-    year: 2022-2023
+  # - course: Temporary Reseach and Teaching Assistant 
+  #   institution: University of Strasbourg
+  #   year: 2022-2023
   - course: PhD Student in Computer Science (Computer networks)
     institution: University of Strasbourg
     year: 2019-2022
