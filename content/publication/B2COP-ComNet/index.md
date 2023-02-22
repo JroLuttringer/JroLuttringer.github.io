@@ -17,20 +17,20 @@ authors:
 #- "Equal contribution"
 #- "Equal contribution"
 
-date: "2021-12-01T00:00:00Z"
-doi: "https://doi.org/10.48550/arXiv.2110.09320"
+date: "2022-10-01T00:00:00Z"
+doi: "https://doi.org/10.1016/j.comnet.2022.109015"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2022-10-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *ArXiv* 
+publication: In *Computer Networks* 
 
 #publication_short: In *ICW*
 
@@ -52,7 +52,7 @@ featured: false
 url_pdf: 'https://arxiv.org/pdf/2110.09320.pdf'
 url_code: 'https://github.com/talfroy/BEST2COP'
 url_dataset: 'https://zenodo.org/record/5535430#.Yj3SXNDMKV4'
-url_poster: 'https://drive.google.com/drive/folders/11X-IZMjBegMQQirWrKHDy6zm38fnZ7an'
+url_poster: 'https://www.dropbox.com/s/u6smo40kve15ro2/Poster%20LUTTRINGER%20These.pdf?dl=0'
 url_project: ''
 url_slides: ''
 url_source: ''

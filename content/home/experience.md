@@ -22,12 +22,20 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: "Temporary Research/Teaching Assistant"
+    company: ICube, University of Strasbourg
+    company_url: 'https://icube.unistra.fr/'
+    location: Strasbourg, France
+    date_start: '2022-10-01'
+    date_end: '2023-08-31'
+    description: Continued working on path computation and programmable networks. Taught ~192h on networking and programming. Supervised internships. 
+
   - title: "Ph.D. Student in Computer Science: Beyond Best Effort"
     company: ICube, University of Strasbourg
     company_url: 'https://icube.unistra.fr/'
     location: Strasbourg, France
     date_start: '2019-10-01'
-    date_end: ''
+    date_end: '2022-10-01'
     description: Conception  and evaluation of a multi-constrained shortest paths algorithm for massive-scale Traffic-Engineering with Segment Routing. In collaboration with Cisco Systems. Continued work on the BGP/IGP protection scheme OPTIC and its P4 implementation. Governemental fellowship. 
        
   - title: "Master thesis: OPTIC, Protecting BGP traffic from internal events"

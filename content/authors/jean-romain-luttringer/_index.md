@@ -9,7 +9,7 @@ authors:
 superuser: true
 
 # Role/position/tagline
-role: Ph.D. Candidate in Computer Science
+role: Ph.D. in Computer Science
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -31,9 +31,9 @@ education:
   - course: Temporary Reseach and Teaching Assistant 
     institution: University of Strasbourg
     year: 2022-2023
-  - course: PhD in Computer Science (Computer networks)
+  - course: PhD Student in Computer Science (Computer networks)
     institution: University of Strasbourg
-    year: 2022
+    year: 2019-2022
   - course: MSc in Computer Networks and Embedded Systems
     institution: University of Strasbourg
     year: 2019, with high honors
@@ -73,9 +73,9 @@ email: ""
 highlight_name: true
 ---
 
-I am a PhD in Computer Networks currently working as a research and teaching assistant at the  [University of Strasbourg](https://www.unistra.fr/), in the [Networks Teams](https://reseaux.icube.unistra.fr/en/index.php/Home) of the ICube laboratory. 
+I am a Ph.D. in Computer Networks currently working as a research and teaching assistant at the  [University of Strasbourg](https://www.unistra.fr/), in the [Networks Teams](https://reseaux.icube.unistra.fr/en/index.php/Home) of the ICube laboratory. 
 
-My work focuses around routing. In particular, I worked on constrained path computation for large-scale Segment Routing domains (which lead to the BEST2COP and LCA algorithm). I am also working on OPTIC, a way to mitigate the impact of hot-potato BGP routing on transit traffic and its P4 implementation. 
+My work focuses around routing. In particular, I worked on constrained path computation for large-scale Segment Routing domains. I am also working on OPTIC, a way to mitigate the impact of hot-potato BGP routing on transit traffic and its P4 implementation. 
 
 Besides my work on routing, I have also worked on Internet topology discovery, more precisely on hidden MPLS tunnels revelation in the wild and on large-scale multi-domain tunnels measurements (Geant GN4).
 
