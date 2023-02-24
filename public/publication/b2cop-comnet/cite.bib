@@ -1,0 +1,15 @@
+
+@article{LUTTRINGER2022109015,
+	abstract = {With a growing demand for quasi-instantaneous communication services such as real-time video streaming, cloud gaming, and industry 4.0 applications, multi-constraint Traffic Engineering (TE) becomes increasingly important. While legacy TE management planes like MPLS have proven laborious to deploy, Segment Routing (SR) drastically eases the deployment of TE paths and is thus increasingly adopted by Internet Service Providers (ISP). There is now a clear need in computing and deploying Delay-Constrained Least-Cost paths (DCLC) with SR for real-time interactive services requiring both low delay and high bandwidth routes. However, most current DCLC solutions are not tailored for SR. They also often lack efficiency (particularly exact schemes) or guarantees (by relying on unbounded heuristics). Similarly to approximation schemes, we argue that the actual challenge is to design an algorithm providing both performances and strong guarantees. However, conversely to most of these schemes, we also consider operational constraints to provide a practical, high-performance implementation. In this work, we extend and further evaluate our previous contribution, BEST2COP. BEST2COP leverages inherent limitations in the accuracy of delay measurements, accounts for the operational constraint added by SR, and provides guarantees and bounded computation time in all cases thanks to simple but efficient data structures and amortized procedures. We show that BEST2COP is faster than a state-of-the-art algorithm on both random and real networks of up to 1000 nodes. Relying on commodity hardware with a single thread, our algorithm retrieves all non-superfluous 3-dimensional routes in under 100ms in both cases. This execution time is further reduced using multiple threads, as the design of BEST2COP enables a significant speed-up thanks to a highly parallelizable core which also enables a balanced computing load between threads. Finally, we extend BEST2COP to deal with massive-scale ISP by leveraging the multi-area partitioning of these deployments. Thanks to our new topology generator specifically designed to model realistic patterns in such massive IP networks, we show that BEST2COP can solve DCLC-SR in approximately 1 s even for ISP having more than 100 000 routers.},
+	author = {Jean-Romain Luttringer and Thomas Alfroy and Pascal M{\'e}rindol and Quentin Bramas and Fran{\c c}ois Clad and Cristel Pelsser},
+	doi = {https://doi.org/10.1016/j.comnet.2022.109015},
+	issn = {1389-1286},
+	journal = {Computer Networks},
+	keywords = {Traffic Engineering, Segment Routing, DCLC, CSP, Delay Constrained Least Cost, QoS routing},
+	pages = {109015},
+	title = {Deploying near-optimal delay-constrained paths with Segment Routing in massive-scale networks},
+	url = {https://www.sciencedirect.com/science/article/pii/S1389128622001748},
+	volume = {212},
+	year = {2022},
+	bdsk-url-1 = {https://www.sciencedirect.com/science/article/pii/S1389128622001748},
+	bdsk-url-2 = {https://doi.org/10.1016/j.comnet.2022.109015}}
