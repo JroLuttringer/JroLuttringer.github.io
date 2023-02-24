@@ -7,7 +7,7 @@ widget: experience
 headless: true
 
 # Order that this section appears on the page.
-weight: 59
+weight: 20
 
 title: Experience & Research
 subtitle:
@@ -22,40 +22,49 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: "Temporary Research/Teaching Assistant"
-    company: ICube, University of Strasbourg
+  - title: "Temporary Research and Teaching Assistant"
+    company: ICube, University of Strasbourg, Network Research Group
     company_url: 'https://icube.unistra.fr/'
     location: Strasbourg, France
     date_start: '2022-10-01'
-    date_end: '2023-08-31'
-    description: Continued working on path computation and programmable networks. Taught ~192h on networking and programming. Supervised internships. 
+    date_end: ''
+    description: "
+    - Continued working on path computation and programmable networks. 
 
-  - title: "Ph.D. Student in Computer Science: Beyond Best Effort"
-    company: ICube, University of Strasbourg
+    - Taught ~192h on networking and programming. Supervised internships."
+
+  - title: "Ph.D. Student in Computer Science"
+    company: ICube, University of Strasbourg, Network Research Group
     company_url: 'https://icube.unistra.fr/'
     location: Strasbourg, France
     date_start: '2019-10-01'
     date_end: '2022-10-01'
-    description: Conception  and evaluation of a multi-constrained shortest paths algorithm for massive-scale Traffic-Engineering with Segment Routing. In collaboration with Cisco Systems. Continued work on the BGP/IGP protection scheme OPTIC and its P4 implementation. Governemental fellowship. 
+    description: "Governemental fellowship.
+
+    - Conception & evaluation of a multi-constrained paths algorithm for massive-scale Traffic-Engineering with Segment Routing (in collaboration with Cisco Systems). 
+
+    - Continued work on the BGP/IGP protection scheme OPTIC and its P4 implementation
+   
+   - Taught 64h * 3 (64h per year) of courses on networking and system."
        
   - title: "Master thesis: OPTIC, Protecting BGP traffic from internal events"
-    company: ICube, University of Strasbourg
+    company: ICube, University of Strasbourg, Network Research Group
     company_url: 'https://icube.unistra.fr/'
     location: Strasbourg, France
     date_start: '2019-02-01'
     date_end: '2019-07-01'
     description: Conception of OPTIC, a forwarding scheme protecting transiting BGP trafic from the effect of hot potato routing.
     
-  - title: "Inter-Domain netwotk services supervision"
-    company: ICube, University of Strasbourg
+  - title: "Inter-Domain network services supervision"
+    company: ICube, University of Strasbourg, Network Research Group
     company_url: 'https://icube.unistra.fr/'
     location: Strasbourg, France
     date_start: '2018-05-01'
     date_end: '2018-09-01'
-    description: European project aiming at monitoring multi-domain VPN through active measurements within a distributed platform. Development of a python tools aggretating and correlating the measurements.
+    description: European project (Geant GN4) aiming at monitoring multi-domain VPN through active measurements within a distributed platform. Development of a python tools aggretating and correlating the measurements.
 
   - title: "Discovering Hidden MPLS tunnels"
-    company: ICube, University of Strasbourg
+    company: ICube, University of Strasbourg, Network Research Group
     company_url: 'https://icube.unistra.fr/'
     location: Strasbourg, France
     date_start: '2017-05-01'
@@ -64,7 +73,7 @@ experience:
     
 
   - title: "Parallel image reconstruction method for cryo-EM"
-    company: ICube, University of Strasbourg
+    company: ICube, University of Strasbourg, ICPS
     company_url: 'https://icube.unistra.fr/'
     location: Strasbourg, France
     date_start: '2016-09-01'

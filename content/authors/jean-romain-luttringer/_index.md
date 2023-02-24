@@ -75,9 +75,7 @@ highlight_name: true
 
 I am a Ph.D. in Computer Networks currently working as a research and teaching assistant at the  [University of Strasbourg](https://www.unistra.fr/), in the [Networks Teams](https://reseaux.icube.unistra.fr/en/index.php/Home) of the ICube laboratory. 
 
-My work focuses around routing. In particular, I worked on constrained path computation for large-scale Segment Routing domains. I am also working on OPTIC, a way to mitigate the impact of hot-potato BGP routing on transit traffic and its P4 implementation. 
-
-Besides my work on routing, I have also worked on Internet topology discovery, more precisely on hidden MPLS tunnels revelation in the wild and on large-scale multi-domain tunnels measurements (Geant GN4).
+My work focuses around routing, from inter-domain routing to intra-domain traffic engineering. I have also worked on Internet topology discovery on large-scale monitoring.
 
 I have also taught ~ 400h in the past 4 years (and thoroughly enjoyed doing so!).
 

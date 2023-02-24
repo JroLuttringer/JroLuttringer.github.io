@@ -7,9 +7,9 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 20
+weight: 30
 
-title: Recent Publications
+title: Publications
 subtitle: ''
 
 content:
@@ -31,7 +31,7 @@ content:
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
 design:
-  # Choose a view for the listings:
+  # Choose a view for the listings: citation, compact, card
   view: citation
   columns: '2'
 ---
