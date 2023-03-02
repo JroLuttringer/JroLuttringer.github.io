@@ -79,7 +79,7 @@ My work focuses around routing, from inter-domain routing to intra-domain traffi
 
 I have also taught ~ 400h in the past 4 years (and thoroughly enjoyed doing so!).
 
-{{< icon name="dropbox" pack="fas" >}} The material I've created for my courses can be found [Here !](https://shorturl.at/iqzEX)
+{{< icon name="dropbox" pack="fab" >}} The material I've created for my courses can be found [Here !](https://shorturl.at/iqzEX)
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

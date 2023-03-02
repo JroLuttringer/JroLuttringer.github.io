@@ -1,7 +1,7 @@
 ---
 summary: "
 <picture>
-  <img src=\"/img/mentoringSummaryPDF.pdf\">
+  <img src=\"img/mentoringSummaryPDF.pdf\">
 </picture>
 "
 tags:
