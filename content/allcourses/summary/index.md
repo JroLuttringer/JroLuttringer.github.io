@@ -2,9 +2,18 @@
 title: Summary of the given courses
 summary: "
 <picture>
-  <img src=\"/img/coursesSummaryPDF.pdf\">
-</picture>
+   <img src=\"/img/coursesSummaryPDF.svg\">
+ </picture>
 "
+
+# <iframe src=\"/img/coursesSummaryPDF.pdf\" width=\"50%\" height=\"100%\" </iframe>
+
+
+# "
+# <picture>
+#   <img src=\"/img/coursesSummary.png\">
+# </picture>
+# "
 tags:
 - summary
 
@@ -14,4 +23,6 @@ tags:
 
 
 ---
-![test](/img/coursesSummaryPDF.pdf)
+<picture>
+   <img src="/img/coursesSummaryPDF.svg">
+ </picture>

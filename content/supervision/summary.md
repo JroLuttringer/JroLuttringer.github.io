@@ -1,6 +1,6 @@
 ---
 summary: "
-  <img src=\"img/mentoringSummaryPDF.pdf\">
+  <img src=\"img/mentoringSummaryPDF.svg\">
 "
 tags:
 - summary
