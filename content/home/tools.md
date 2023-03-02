@@ -31,6 +31,8 @@ content:
     tag: courses
   - name: Pedagogical Tools
     tag: tools
+  - name: Other Tools
+    tag: Rtools
 
 header:
   caption: ""
