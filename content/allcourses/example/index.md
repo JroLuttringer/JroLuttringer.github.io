@@ -2,7 +2,7 @@
 title: Courses given during Ph. D. (3 x 64h)
 summary: "
 <table>
-<tr>
+<tr bgcolor=\"#ddd\" >
         <td width =18% ><b>Name     </b></td>
         <td width =5%><b>Type</b></td>
         <td width =5%><b>Hours</b></td>
@@ -22,7 +22,7 @@ summary: "
         <td></td>
         <td></td>
     </tr>
-    <tr>
+    <tr bgcolor=\"#eee\">
         <td>Network Algorithms</td>
         <td>TP<BR>TD</td>
         <td>48<BR>24</td>
@@ -42,7 +42,7 @@ summary: "
         <td>Pratical Session</td>
         <td></td>
     </tr>
-    <tr>
+    <tr bgcolor=\"#eee\">
         <td>Local Networks</td>
         <td>TP <BR> TD <BR> CM</td>
         <td>16 <BR> 12 <BR> 24</td>

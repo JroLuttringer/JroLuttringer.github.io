@@ -12,6 +12,8 @@ weight: 30
 title: Publications
 subtitle: ''
 
+
+
 content:
   # Filter on criteria
   filters:

@@ -25,12 +25,14 @@ content:
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove the toolbar, delete the entire `filter_button` block.
   filter_button:
-  - name: All
-    tag: "*"
+  - name: Summary
+    tag: summary
   - name: TER (Master 1)
     tag: TER
   - name: PRDS (Bachelor)
     tag: PRDS
+  - name: All
+    tag: "*"
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
@@ -41,7 +43,7 @@ design:
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view: 1
+  view: listsub
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows: false

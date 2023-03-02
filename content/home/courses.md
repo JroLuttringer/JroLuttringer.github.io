@@ -4,13 +4,21 @@
 widget: portfolio
 
 # This file represents a page section.
-headless: true
+headless: false
 
 # Order that this section appears on the page.
 weight: 40
 
 title: Courses
-subtitle: 'Materials I have created for my courses can be found [here](https://www.dropbox.com/scl/fo/q263e9wh8bq3subya1dxo/h?dl=0&rlkey=qlx5xj815s0lahc9sllthcbmu)'
+subtitle: '
+I have given about 400h of couses in total, for various diploma and at various levels. I have given magistral courses, practical sessions as well as tutorials.
+
+
+The materials I have created and co-created for my courses can be found [here](https://www.dropbox.com/scl/fo/q263e9wh8bq3subya1dxo/h?dl=0&rlkey=qlx5xj815s0lahc9sllthcbmu)
+
+
+'
+
 
 content:
   # Page type to display. E.g. project.
@@ -25,6 +33,8 @@ content:
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove the toolbar, delete the entire `filter_button` block.
   filter_button:
+  - name: Summary
+    tag: summary
   - name: Current (ATER)
     tag: CoursesCurrent
   - name: Ph.D.
@@ -41,7 +51,8 @@ design:
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view: 2
+  view: card
+
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows: false

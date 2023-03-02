@@ -1,5 +1,6 @@
 ---
 title: Courses given during my ATER (192h)
+nodate: "true"
 summary: "
 <table>
     <tr bgcolor=\"#ddd\">

@@ -28,10 +28,10 @@ main:
     weight: 50
   - name: "Tools & Materials"
     url: '#tools'
-    weight: 80
+    weight: 70
   - name: Awards
     url: '#awards'
-    weight: 70 
+    weight: 80 
   - name: "Other Activities"
     url: '#other'
     weight: 90

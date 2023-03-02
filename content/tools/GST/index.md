@@ -9,10 +9,9 @@ tags:
 - tools
 date: "2022-10-01T00:00:00Z"
 
-header:
-  caption: ""
-  image: "featured.jpg"
-
+image:
+  placement: 1
+  focal_point: "Center"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://jr.luttringer.pages.unistra.fr/gst/"

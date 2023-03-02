@@ -11,9 +11,11 @@ title = "Awards"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 60
+weight = 70
 
 +++
+
+
 
 ### __Best Paper Award of ALGOTEL 21__
 
