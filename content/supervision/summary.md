@@ -1,5 +1,6 @@
 ---
 summary: "
+![Test Image](img/mentoringSummaryPDF.pdf)
   <img src=\"img/mentoringSummaryPDF.pdf\">
 "
 tags:
