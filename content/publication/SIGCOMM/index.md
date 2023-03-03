@@ -27,8 +27,8 @@ date: "2023-02-15T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication:  \*Submitted to SIGCOMM*
-publication_short: \*Submitted to SIGCOMM*
+publication:  "*Submitted to SIGCOMM*"
+publication_short: "*Submitted to SIGCOMM*"
 
 abstract:  "Source Routing as enabled by Segment Routing (SR) allows controlling forwarding paths by specifying a list of detours (or segments) to deviate the packets along arbitrary routes. Computing the list of segments to encode a path is a challenging task (in particular when the number of segments has to be minimized) that has never been properly addressed.
 
