@@ -30,12 +30,16 @@ publication_types: ["3"]
 publication:  \*Submitted to SIGCOMM*
 publication_short: \*Submitted to SIGCOMM*
 
-abstract:  Source Routing as enabled by Segment Routing (SR) allows controlling forwarding paths by specifying a list of detours (or segments) to deviate the packets along arbitrary routes. Computing the list of segments to encode a path is a challenging task (in particular when the number of segments has to be minimized) that has never been properly addressed.
+abstract:  "Source Routing as enabled by Segment Routing (SR) allows controlling forwarding paths by specifying a list of detours (or segments) to deviate the packets along arbitrary routes. Computing the list of segments to encode a path is a challenging task (in particular when the number of segments has to be minimized) that has never been properly addressed.
+
+
 In this paper, we finally tackle this challenge. We show that, conversely to what is often proposed in the literature, the segment list computation must be tied within the path computation to solve this task correctly and efficiently. Thus, we design a flexible framework, GOFOR-SR, that can wrap SR around usual path computation algorithms to output minimal segment lists encoding the solutions. Our generic formal model supports many use cases with diverse optimization strategies and contains the first incremental algorithm that encodes a path into a minimal list of segments of any type.
-GOFOR not only eases the optimal integration of SR into varied path computation algorithms but also offers various path diversity models, all for a linear overhead. We implement GOFOR and demonstrate its benefits when tackling challenging use cases through an experimental evaluation.
+
+
+GOFOR not only eases the optimal integration of SR into varied path computation algorithms but also offers various path diversity models, all for a linear overhead. We implement GOFOR and demonstrate its benefits when tackling challenging use cases through an experimental evaluation."
 
 # Summary. An optional shortened abstract.
-summary: Calculer des chemins contraints déployables avec Segment Routing pour des réseaux de plus de 1000 noeuds.
+summary: "Augment standard path computation scheme to find the optimal segment lists for a given path"
 
 tags: []
 
