@@ -82,4 +82,4 @@ I have also taught ~ 400h in the past 4 years (and thoroughly enjoyed doing so!)
 {{< icon name="dropbox" pack="fab" >}} The material I've created for my courses can be found [Here !](https://shorturl.at/iqzEX)
 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my [resume](https://www.dropbox.com/s/96zd7nf9dchwy2u/CV_FR_JR_LUTTRINGER.pdf?dl=0).
