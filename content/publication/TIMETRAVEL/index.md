@@ -27,13 +27,13 @@ doi: "https://doi.org/10.48550/arXiv.2205.03372"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *ArXiV (under review)*
-publication_short: In *ArXiV (under review)*
+publication: In *Symposium on Stabilization, Safety, and Security of Distributed Systems*
+publication_short: In *SSS*
 
 abstract:  We consider transportation networks that are modeled by dynamic graphs, and introduce the possibility for traveling agents to use Backward Time-Travel (BTT) devices at any node to go back in time (to some extent, and with some appropriate fee) before resuming their trip. We focus on dynamic line graphs. In more detail, we propose exact algorithms to compute travel plans with constraints on the BTT cost or on how far back in time you can go, while minimizing travel delay (that is, the time difference between the arrival instant and the starting instant), in polynomial time. We study the impact of the BTT devices pricing policies on the computation process of those plans considering travel delay and cost, and provide necessary properties that pricing policies should satisfy to enable to compute such plans. Finally, we provide an optimal online algorithm for the unconstrained problem when the cost function is the identity.
 
 # Summary. An optional shortened abstract.
-summary: Calculer des chemins contraints déployables avec Segment Routing pour des réseaux de plus de 1000 noeuds.
+# summary: Calculer des chemins contraints déployables avec Segment Routing pour des réseaux de plus de 1000 noeuds.
 
 tags: []
 
@@ -45,7 +45,7 @@ featured: true
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["1"]
 
 url_pdf: 'https://arxiv.org/abs/2205.03372'
 url_code: ''

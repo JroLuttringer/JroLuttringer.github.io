@@ -15,6 +15,10 @@ weight = 70
 
 +++
 
+### __Ph.D. Thesis Prize of the University of Strasbourg__
+
+For *[Path Computation in IP Networks : Reliable Hot-Potato Routing and Multi-Constrained Tunnels]()*.
+Awarded to 20 new Ph.D. of the University
 
 
 ### __Best Paper Award of ALGOTEL 21__
