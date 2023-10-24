@@ -9,7 +9,7 @@ authors:
 superuser: true
 
 # Role/position/tagline
-role: Associate Professor at the University of Strasbourg
+role: Assistant Professor at the University of Strasbourg
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -76,7 +76,7 @@ email: ""
 highlight_name: true
 ---
 
-I am a Ph.D. in Computer Networks currently working as a research and teaching assistant at the  [University of Strasbourg](https://www.unistra.fr/), in the [Networks Teams](https://reseaux.icube.unistra.fr/en/index.php/Home) of the ICube laboratory. 
+I am a Ph.D. in Computer Networks currently working as an Assistant Professor at the  [University of Strasbourg](https://www.unistra.fr/), in the [Networks Teams](https://reseaux.icube.unistra.fr/en/index.php/Home) of the ICube laboratory. 
 
 My work focuses around routing, from inter-domain routing to intra-domain traffic engineering. I have also worked on Internet topology discovery on large-scale monitoring.
 

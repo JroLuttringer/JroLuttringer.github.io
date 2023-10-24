@@ -24,6 +24,16 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: "Assistant Professor"
+    company: ICube, University of Strasbourg, Network Research Group
+    company_url: 'https://icube.unistra.fr/'
+    location: Strasbourg, France
+    date_start: '2023-10-01'
+    date_end: ''
+    description: "
+    - Teacher at the IUT Robert Schuman / Master's Degree. Research interests 
+    include routing and programmable networks.
+    "
   - title: "Temporary Research and Teaching Assistant"
     company: ICube, University of Strasbourg, Network Research Group
     company_url: 'https://icube.unistra.fr/'
