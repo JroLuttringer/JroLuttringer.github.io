@@ -28,7 +28,7 @@ experience:
     company: ICube, University of Strasbourg, Network Research Group
     company_url: 'https://icube.unistra.fr/'
     location: Strasbourg, France
-    date_start: '2023-10-01'
+    date_start: '2023-09-01'
     date_end: ''
     description: "
     - Teacher at the IUT Robert Schuman / Master's Degree. Research interests 
@@ -39,7 +39,7 @@ experience:
     company_url: 'https://icube.unistra.fr/'
     location: Strasbourg, France
     date_start: '2022-10-01'
-    date_end: ''
+    date_end: '2023-09-01'
     description: "
     - Continued working on path computation and programmable networks. 
 
