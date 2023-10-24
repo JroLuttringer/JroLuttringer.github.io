@@ -11,7 +11,7 @@ weight: 40
 
 title: Courses
 subtitle: '
-I have given about 400h of couses in total, for various diploma and at various levels. I have given magistral courses, practical sessions as well as tutorials.
+I have given about 450h of couses in total, for various diploma and at various levels. 
 
 
 The materials I have created and co-created for my courses can be found [here](https://www.dropbox.com/scl/fo/q263e9wh8bq3subya1dxo/h?dl=0&rlkey=qlx5xj815s0lahc9sllthcbmu)
@@ -35,7 +35,9 @@ content:
   filter_button:
   - name: Summary
     tag: summary
-  - name: Current (ATER)
+  - name: Current
+    tag: Current
+  - name: ATER
     tag: CoursesCurrent
   - name: Ph.D.
     tag: CoursesPHD

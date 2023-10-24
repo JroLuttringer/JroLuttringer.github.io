@@ -28,12 +28,12 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: Associate Professor 
-    institution: University of Strasbourg
-    year: 2023 - 
-  - course: Temporary Reseach and Teaching Assistant 
-    institution: University of Strasbourg
-    year: 2022-2023
+  # - course: Associate Professor 
+  #   institution: University of Strasbourg
+  #   year: 2023 - 
+  # - course: Temporary Reseach and Teaching Assistant 
+  #   institution: University of Strasbourg
+  #   year: 2022-2023
   - course: PhD Student in Computer Science (Computer networks)
     institution: University of Strasbourg
     year: 2019-2022

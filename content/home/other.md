@@ -31,4 +31,4 @@ Autumn school on reproducibility. On-site help.
 International conference on distributed systems. On-site help.
 
 ### Reviews
-Occasional reviewer for IEEE Communication Letters.
+Occasional reviewer for IEEE Communication Letters, IEEE TNSM, IEEE TSAE, Computer Communications.
