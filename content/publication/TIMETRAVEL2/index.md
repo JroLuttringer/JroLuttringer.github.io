@@ -1,5 +1,5 @@
 ---
-title: "Online Space-Time Travel Planning in Dynamic Graphs"
+title: "Offline constrained backward time travel planning"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -14,8 +14,8 @@ authors:
 #- "Equal contribution"
 #- "Equal contribution"
 
-date: "2024-07-06T00:00:00Z"
-doi: "https://doi.org/10.4230/LIPIcs.SAND.2024.7"
+date: "2023-09-30T00:00:00Z"
+doi: "https://doi.org/10.1007/978-3-031-44274-2_35"
 
 # Schedule page publish date (NOT publication's date).
 #publishDate: "2022-09-20T00:00:00Z"
@@ -27,10 +27,10 @@ doi: "https://doi.org/10.4230/LIPIcs.SAND.2024.7"
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *3rd Symposium on Algorithmic Foundations of Dynamic Networks (SAND 2024) *
-publication_short: In *SAND*
+publication: In *Symposium on Stabilization, Safety, and Security of Distributed Systems*
+publication_short: In *SSS*
 
-abstract:  We study the problem of traveling in an unknown dynamic graph, to reach a destination with minimum latency. At each step of the execution, an agent can decide to move to a neighboring node if an edge exists at this time instant, wait at the current node in the hope that other links will appear in the future, or move backward in time using an expensive time travel device. A travel that makes use of backward time travel is called a space-time travel. Our aim is to arrive at the destination with zero delay, which always requires the use of backward time travel if no path exists to the destination during the first time instant. Finding an optimal space-time travel is polynomial when the agent knows the entire dynamic graph (including the future edges), even with additional constraints. However, we consider in this paper that the agent discovers the dynamic graph while it is exploring it, in an online manner. In this paper, we propose two models that define how an agent learns new knowledge about the dynamic graph during the execution of its protocol; the T-online model, where the agent reaching time t learns about the entire past of the network until t (even nodes not yet visited), and the S-online model, where the agent learns about the past and future about the current node he is located at. We present an algorithm with an optimal competitive ratio of 2 for the T-online model. In the S-online model, we prove a lower bound of 2/3n-7/4 and an upper bound of 2n-3 on the optimal competitive ratio when the cost function is linear.
+abstract:  We consider transportation networks that are modeled by dynamic graphs, and introduce the possibility for traveling agents to use Backward Time-Travel (BTT) devices at any node to go back in time (to some extent, and with some appropriate fee) before resuming their trip. We focus on dynamic line graphs. In more detail, we propose exact algorithms to compute travel plans with constraints on the BTT cost or on how far back in time you can go, while minimizing travel delay (that is, the time difference between the arrival instant and the starting instant), in polynomial time. We study the impact of the BTT devices pricing policies on the computation process of those plans considering travel delay and cost, and provide necessary properties that pricing policies should satisfy to enable to compute such plans. Finally, we provide an optimal online algorithm for the unconstrained problem when the cost function is the identity.
 
 # Summary. An optional shortened abstract.
 # summary: Calculer des chemins contraints déployables avec Segment Routing pour des réseaux de plus de 1000 noeuds.
@@ -47,7 +47,7 @@ featured: true
 # 7 = Thesis; 8 = Patent
 publication_types: ["1"]
 
-url_pdf: 'https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAND.2024.7'
+url_pdf: 'https://arxiv.org/abs/2205.03372'
 url_code: ''
 url_dataset: ''
 url_poster: ''

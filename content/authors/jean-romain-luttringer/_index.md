@@ -80,7 +80,7 @@ I am a Ph.D. in Computer Networks currently working as an Assistant Professor at
 
 My work focuses around routing, from inter-domain routing to intra-domain traffic engineering. I have also worked on Internet topology discovery on large-scale monitoring.
 
-I have also taught ~ 400h in the past 4 years (and thoroughly enjoyed doing so!).
+Taught about 544h, and still thoroughly enjoying it for now !
 
 {{< icon name="dropbox" pack="fab" >}} The material I've created for my courses can be found [Here !](https://shorturl.at/iqzEX)
 

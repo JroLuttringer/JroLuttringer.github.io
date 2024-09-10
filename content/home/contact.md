@@ -17,7 +17,7 @@ content:
   
  
   # Contact details (edit or remove options as required)
-  email: jr.luttringer@unistra.fr
+  email: jr.luttringer [at] unistra [dot] fr
  
 design:
   columns: '2'
