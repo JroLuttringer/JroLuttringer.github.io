@@ -1,0 +1,1 @@
+import{b as a,t as e,j as o}from"./web-CgP7nCAW.js";import{N as n}from"./Navbar-JbAz6N1I.js";var i=e("<main>TEST ");function s(r){return["TEST",a(n,{}),(()=>{var t=i();return t.firstChild,o(t,()=>r.children,null),t})()]}export{s as default};

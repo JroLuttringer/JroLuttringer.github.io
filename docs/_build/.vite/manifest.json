@@ -1,0 +1,265 @@
+{
+  "_HttpStatusCode-DjTx85av.js": {
+    "file": "assets/HttpStatusCode-DjTx85av.js",
+    "name": "HttpStatusCode"
+  },
+  "_Navbar-JbAz6N1I.js": {
+    "file": "assets/Navbar-JbAz6N1I.js",
+    "name": "Navbar",
+    "imports": [
+      "_web-CgP7nCAW.js"
+    ],
+    "css": [
+      "assets/Navbar-_bJs7sTM.css"
+    ]
+  },
+  "_Navbar-_bJs7sTM.css": {
+    "file": "assets/Navbar-_bJs7sTM.css",
+    "src": "_Navbar-_bJs7sTM.css"
+  },
+  "_index-rzb3QVRB.js": {
+    "file": "assets/index-rzb3QVRB.js",
+    "name": "index",
+    "imports": [
+      "_web-CgP7nCAW.js"
+    ]
+  },
+  "_js-yaml-mbYHt68G.js": {
+    "file": "assets/js-yaml-mbYHt68G.js",
+    "name": "js-yaml"
+  },
+  "_web-CgP7nCAW.js": {
+    "file": "assets/web-CgP7nCAW.js",
+    "name": "web"
+  },
+  "src/routes/[...404].tsx?pick=default&pick=$css": {
+    "file": "assets/_...404_-GHIXwFcQ.js",
+    "name": "_...404_",
+    "src": "src/routes/[...404].tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js",
+      "_HttpStatusCode-DjTx85av.js"
+    ]
+  },
+  "src/routes/about.tsx?pick=default&pick=$css": {
+    "file": "assets/about-DqTjtePQ.js",
+    "name": "about",
+    "src": "src/routes/about.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js"
+    ]
+  },
+  "src/routes/activities.tsx?pick=default&pick=$css": {
+    "file": "assets/activities-BigkFRXv.js",
+    "name": "activities",
+    "src": "src/routes/activities.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js"
+    ],
+    "css": [
+      "assets/activities-CZOgov6-.css"
+    ]
+  },
+  "src/routes/awards.tsx?pick=default&pick=$css": {
+    "file": "assets/awards-C3vBbSeM.js",
+    "name": "awards",
+    "src": "src/routes/awards.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js"
+    ],
+    "css": [
+      "assets/awards-4BzYbb0c.css"
+    ]
+  },
+  "src/routes/courses.tsx?pick=default&pick=$css": {
+    "file": "assets/courses-DhxTMTVa.js",
+    "name": "courses",
+    "src": "src/routes/courses.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js",
+      "_js-yaml-mbYHt68G.js"
+    ],
+    "css": [
+      "assets/courses-L2WUCJY8.css"
+    ]
+  },
+  "src/routes/experience.tsx?pick=default&pick=$css": {
+    "file": "assets/experience-CE10N3ST.js",
+    "name": "experience",
+    "src": "src/routes/experience.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js"
+    ],
+    "css": [
+      "assets/experience-Ck0Tmewq.css"
+    ]
+  },
+  "src/routes/index.tsx?pick=default&pick=$css": {
+    "file": "assets/index-P2-NHKdA.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js"
+    ],
+    "css": [
+      "assets/index-DmvjEoX2.css"
+    ]
+  },
+  "src/routes/layout.tsx?pick=default&pick=$css": {
+    "file": "assets/layout-Y197DlOA.js",
+    "name": "layout",
+    "src": "src/routes/layout.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_Navbar-JbAz6N1I.js"
+    ]
+  },
+  "src/routes/mentoring.tsx?pick=default&pick=$css": {
+    "file": "assets/mentoring-Cxd3tnHI.js",
+    "name": "mentoring",
+    "src": "src/routes/mentoring.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js",
+      "_js-yaml-mbYHt68G.js"
+    ],
+    "css": [
+      "assets/mentoring-C9Y1Re9y.css"
+    ]
+  },
+  "src/routes/presentations.tsx?pick=default&pick=$css": {
+    "file": "assets/presentations-Dzv0v0C6.js",
+    "name": "presentations",
+    "src": "src/routes/presentations.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js"
+    ],
+    "css": [
+      "assets/presentations-BP85NBbr.css"
+    ]
+  },
+  "src/routes/projects.tsx?pick=default&pick=$css": {
+    "file": "assets/projects-DjwvCP9t.js",
+    "name": "projects",
+    "src": "src/routes/projects.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js"
+    ],
+    "css": [
+      "assets/projects-DJlD2D4M.css"
+    ]
+  },
+  "src/routes/publications.tsx?pick=default&pick=$css": {
+    "file": "assets/publications-CCFzQMKD.js",
+    "name": "publications",
+    "src": "src/routes/publications.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_js-yaml-mbYHt68G.js",
+      "_index-rzb3QVRB.js"
+    ],
+    "css": [
+      "assets/publications-DULwCgvA.css"
+    ]
+  },
+  "src/routes/root.tsx?pick=default&pick=$css": {
+    "file": "assets/root-BTD6QogM.js",
+    "name": "root",
+    "src": "src/routes/root.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js"
+    ]
+  },
+  "src/routes/tools-materials.tsx?pick=default&pick=$css": {
+    "file": "assets/tools-materials-CFqI2I4d.js",
+    "name": "tools-materials",
+    "src": "src/routes/tools-materials.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js"
+    ]
+  },
+  "src/routes/tools.tsx?pick=default&pick=$css": {
+    "file": "assets/tools-Cz_zAt4X.js",
+    "name": "tools",
+    "src": "src/routes/tools.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_index-rzb3QVRB.js"
+    ],
+    "css": [
+      "assets/tools-uM_G4cnJ.css"
+    ]
+  },
+  "virtual:$vinxi/handler/client": {
+    "file": "assets/client-Egoa0afi.js",
+    "name": "client",
+    "src": "virtual:$vinxi/handler/client",
+    "isEntry": true,
+    "imports": [
+      "_web-CgP7nCAW.js",
+      "_Navbar-JbAz6N1I.js",
+      "_index-rzb3QVRB.js",
+      "_HttpStatusCode-DjTx85av.js"
+    ],
+    "dynamicImports": [
+      "src/routes/[...404].tsx?pick=default&pick=$css",
+      "src/routes/about.tsx?pick=default&pick=$css",
+      "src/routes/activities.tsx?pick=default&pick=$css",
+      "src/routes/awards.tsx?pick=default&pick=$css",
+      "src/routes/courses.tsx?pick=default&pick=$css",
+      "src/routes/experience.tsx?pick=default&pick=$css",
+      "src/routes/index.tsx?pick=default&pick=$css",
+      "src/routes/layout.tsx?pick=default&pick=$css",
+      "src/routes/mentoring.tsx?pick=default&pick=$css",
+      "src/routes/presentations.tsx?pick=default&pick=$css",
+      "src/routes/projects.tsx?pick=default&pick=$css",
+      "src/routes/publications.tsx?pick=default&pick=$css",
+      "src/routes/root.tsx?pick=default&pick=$css",
+      "src/routes/tools-materials.tsx?pick=default&pick=$css",
+      "src/routes/tools.tsx?pick=default&pick=$css"
+    ],
+    "css": [
+      "assets/client-CsRNQkWs.css"
+    ]
+  }
+}
