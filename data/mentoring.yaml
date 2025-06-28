@@ -1,0 +1,38 @@
+phdStudents: []
+
+master2Students:
+  - title: "Improving energy efficiency of (programmable) networks"
+    year: 2025
+    name: "Florent Hardy"
+    supervision: "co-supervision"
+    description: "Working on the GARDEN ANR Project to develop and implement solutions for energy-efficient programmable networks."
+  
+  - title: "Symroute: an efficient, ECMP-aware fast reroute solution"
+    year: 2025
+    name: "Maxime Friess"
+    supervision: "co-supervision"
+    description: "Developing and evaluating a fast reroute mechanism that works efficiently with Equal-Cost Multi-Path routing environments."
+  
+  - title: "Study of Gray Failures in Computer Networks : Taxonomy and Data Generation"
+    year: 2025
+    name: "Amina Moalla"
+    supervision: "co-supervision"
+    description: "Conducting a comprehensive study on gray failures in computer networks, focusing on taxonomy and data generation techniques."
+
+master1Students:
+  - title: "GOFOR-SR: A general framework to compute path for segment routing"
+    year: 2024
+    name: "Florent Hardy"
+    description: "Developed a flexible framework for computing optimal paths in Segment Routing networks."
+  
+  - title: "Symroute"
+    year: 2024
+    name: "Maxime Friess"
+    description: "Worked on the development of Symroute, a fast reroute solution for network resilience."
+  
+  - title: "Implementation of Best2cop"
+    year: 2020
+    name: "Thomas Alfroy"
+    description: "Implemented the Best2cop algorithm for computing Delay Constrained, Least Cost paths for Segment Routing."
+
+bachelorStudents: []

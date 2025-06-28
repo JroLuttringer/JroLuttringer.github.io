@@ -1,0 +1,110 @@
+import { Title } from "@solidjs/meta";
+import "./experience.css";
+
+export const prerender = true;
+
+export default function Experience() {
+  return (
+    <div class="container">
+      <Title>Experience - Jean-Romain Luttringer</Title>
+      <h1>Professional Experience</h1>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>Sep 2023 – Present</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Assistant Professor</h3>
+            <h4>ICube, University of Strasbourg, Network Research Group</h4>
+            <p class="location">Strasbourg, France</p>
+            <p>Teacher at the IUT Robert Schuman / Master's Degree. Research interests include routing and programmable networks.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>Oct 2022 – Sep 2023</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Temporary Research and Teaching Assistant</h3>
+            <h4>ICube, University of Strasbourg, Network Research Group</h4>
+            <p class="location">Strasbourg, France</p>
+            <p>Continued working on path computation and programmable networks.</p>
+            <p>Taught ~192h on networking and programming. Supervised internships.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>Oct 2019 – Oct 2022</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Ph.D. Student in Computer Science</h3>
+            <h4>ICube, University of Strasbourg, Network Research Group</h4>
+            <p class="location">Strasbourg, France</p>
+            <p>Governemental fellowship.</p>
+            <p>Conception & evaluation of a multi-constrained paths algorithm for massive-scale Traffic-Engineering with Segment Routing (in collaboration with Cisco Systems).</p>
+            <p>Continued work on the BGP/IGP protection scheme OPTIC and its P4 implementation.</p>
+            <p>Taught 64h * 3 (64h per year) of courses on networking and system.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>Feb 2019 – Jul 2019</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Master thesis: OPTIC, Protecting BGP traffic from internal events</h3>
+            <h4>ICube, University of Strasbourg, Network Research Group</h4>
+            <p class="location">Strasbourg, France</p>
+            <p>Conception of OPTIC, a forwarding scheme protecting transiting BGP trafic from the effect of hot potato routing.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>May 2018 – Sep 2018</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Research Internship: Inter-Domain network services supervision</h3>
+            <h4>ICube, University of Strasbourg, Network Research Group</h4>
+            <p class="location">Strasbourg, France</p>
+            <p>European project (Geant GN4) aiming at monitoring multi-domain VPN through active measurements within a distributed platform. Development of a python tools aggretating and correlating the measurements.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>May 2017 – Jul 2017</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Research Internship: Discovering Hidden MPLS tunnels</h3>
+            <h4>ICube, University of Strasbourg, Network Research Group</h4>
+            <p class="location">Strasbourg, France</p>
+            <p>Finding ways to detect and reveal hidden MPLS in the wild in a testbed, and implement the detection/revelation methods in a python tool.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>Sep 2016 – Dec 2016</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Research Internship: Parallel image reconstruction method for cryo-EM</h3>
+            <h4>ICube, University of Strasbourg, ICPS</h4>
+            <p class="location">Strasbourg, France</p>
+            <p>Porting to an HP grid of an image reconstruction algorithm. Live selection and duplication of most promising executions within a VM network to converge quicker to an optimum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

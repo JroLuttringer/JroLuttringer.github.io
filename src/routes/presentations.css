@@ -1,0 +1,142 @@
+/* Presentations page styling */
+
+.disclaimer {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #007bff;
+}
+
+.disclaimer p {
+  margin: 0;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.disclaimer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.disclaimer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.presentation-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #ff6b35;
+}
+
+.presentations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.presentation-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border-left: 4px solid #ff6b35;
+}
+
+.presentation-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #121212;
+  line-height: 1.4;
+}
+
+.presentation-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.venue {
+  font-weight: 600;
+  color: #ff6b35;
+}
+
+.date {
+  font-style: italic;
+}
+
+.description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.presentation-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.button-presentation {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ff6b35;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid #ff6b35;
+}
+
+.button-presentation:hover {
+  background-color: #e55a2b;
+  border-color: #e55a2b;
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .presentations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .presentation-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .disclaimer {
+    padding: 1rem;
+  }
+}

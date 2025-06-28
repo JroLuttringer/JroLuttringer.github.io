@@ -1,0 +1,113 @@
+/* Mentoring page styling */
+.mentoring-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mentoring-section {
+  margin-bottom: 3rem;
+}
+
+.mentoring-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.mentoring-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #ff6b35; /* Orange accent */
+}
+
+/* Students grid layout */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Student card styling */
+.student-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.student-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #121212;
+  max-width: 75%;
+}
+
+.year-badge {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.student-name {
+  color: #555;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.supervision {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.student-card p:last-child {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Empty card styling */
+.empty-card {
+  background-color: #f9f9f9;
+  border: 2px dashed #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.empty-card p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+}

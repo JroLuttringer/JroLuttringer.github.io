@@ -1,0 +1,214 @@
+journals:
+  - title: "A Simple and General Operational Framework to Deploy Optimal Routes with Source Routing"
+    year: 2025
+    venue: "Transactions on Networking"
+    editor: "IEEE/ACM"
+    authors:
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Pascal Mérindol"
+    links:
+      doi: "https://doi.org/11.1109/TON.2025.3534332"
+      preprint: "https://arxiv.org/abs/2311.17769"
+
+  - title: "Deploying Near-Optimal Delay-Constrained Paths with Segment Routing in Massive-Scale Networks"
+    venue: "Computer Networks"
+    editor: "Elsevier"
+    year: 2022
+    authors:
+      - "Jean-Romain Luttringer"
+      - "Thomas Alfroy"
+      - "Pascal Mérindol"
+      - "Quentin Bramas"
+      - "François Clad"
+      - "Cristel Pelsser"
+    abstract: "This paper presents methods for deploying near-optimal delay-constrained paths using Segment Routing in large-scale networks."
+    links:
+      doi: "https://doi.org/10.1016/j.comnet.2022.109015"
+      preprint: "https://arxiv.org/abs/2110.09320"
+
+  - title: "Let there be light: Revealing hidden MPLS tunnels with TNT"
+    venue: "TNSM"
+    editor: "IEEE"
+    year: 2019
+    authors:
+      - "Jean-Romain Luttringer"
+      - "Yves Vanaubel"
+      - "Pascal Mérindol"
+      - "Benoit Donnet"
+      - "Jean-Jacques Pansiot"
+    abstract: "This work introduces TNT, a tool for revealing MPLS tunnels in the Internet using advanced probing techniques."
+    links:
+      doi: "https://doi.org/10.1109/TNSM.2019.2907242"
+      preprint: "https://arxiv.org/abs/1901.10156"
+
+conferences:
+  - title: Offline constrained backward time travel planning
+    venue: "SSS"
+    editor: "LNCS Springer"
+    year: 2023
+    authors:
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Sébastien Tixeuil"
+    links:
+      doi: "https://doi.org/10.1007/978-3-031-44274-2_35"
+      Preprint : "https://hal.science/hal-03655239v2/document"
+
+
+  - title: "Online Space-Time Travel Planning in Dynamic Graphs"
+    venue: "SAND"
+    editor: "Schloss Dagstuhl"
+    year: 2024
+    authors:
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Sébastien Tixeuil"
+    abstract: "This paper discusses online algorithms for space-time travel planning in dynamic graphs."
+    links:
+      doi (OA): "https://doi.org/10.4230/LIPIcs.SAND.2024.7"
+
+  - title: "A Fast-Convergence Routing of the Hot-Potato"
+    venue: "INFOCOM"
+    editor: "IEEE"
+    year: 2021
+    authors:
+      - "Jean-Romain Luttringer"
+      - "Quentin Bramas"
+      - "Cristel Pelsser"
+      - "Pascal Mérindol"
+    abstract: "The paper proposes a routing algorithm that achieves fast convergence in hot-potato routing scenarios."
+    links:
+      doi: "https://doi.org/10.1109/INFOCOM42981.2021.9488845"
+      preprint: "https://arxiv.org/abs/2101.09002"
+      slides: "https://seafile.unistra.fr/f/5e987c0979e64e54838e/"
+
+  - title: "Computing Delay-Constrained Least-Cost Paths for Segment Routing is Easier Than You Think"
+    venue: "NCA"
+    editor: "IEEE"
+    year: 2020
+    authors:
+      - "Jean-Romain Luttringer"
+      - "Thomas Alfroy"
+      - "Pascal Mérindol"
+      - "Quentin Bramas"
+      - "François Clad"
+      - "Cristel Pelsser"
+    abstract: "The paper discusses efficient algorithms for computing delay-constrained least-cost paths in Segment Routing networks."
+    links:
+      doi: "https://doi.org/10.1109/NCA51143.2020.9306694"
+      preprint: "https://arxiv.org/abs/2011.05191"
+      slides: "https://seafile.unistra.fr/f/af558c463afd4c05a1c0/"
+
+  - title: "TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels"
+    venue: "TMA"
+    editor: "IEEE"
+    year: 2019
+    authors:
+      - "Yves Vanaubel"
+      - "Jean-Romain Luttringer"
+      - "Pascal Mérindol"
+      - "Jean-Jacques Pansiot"
+      - "Benoit Donnet"
+    abstract: "This work introduces TNT, a tool for revealing MPLS tunnels in the Internet using advanced probing techniques."
+    links:
+      doi: "https://doi.org/10.23919/TMA.2019.8784525"
+      OA Link: "https://tma.roc.cnam.fr/Proceedings/TMA_Paper_9.pdf"
+    awards:
+      - "Best Paper Award"
+      - "Best Dataset Runner-up"
+      - "ITC Paper of the Year"
+
+workshops:
+
+national_conferences:
+  - title: 🥾 Le guide du routard temporel 🥾
+    venue: "AlGOTEL"
+    year: 2024
+    authors:
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Sébastien Tixeuil"
+    links:
+      OA Link: "https://hal.science/hal-04565997/document"
+
+  - title: "Quelle couture en cas de coupure?"
+    venue: "ALGOTEL"
+    year: 2025
+    authors:
+      - "Pascal Mérindol"
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Stefano Vissicchio"
+    links: 
+      OA Link: "https://hal.science/hal-05034829v1/file/Symrouting__Copy_-1.pdf"
+      slides: https://seafile.unistra.fr/f/c21492e3029f44c6b215/
+
+  - title: "Le Problème à trois Contraintes: Calcul et Déploiement de Segments de Routage"
+    venue: "ALGOTEL"
+    year: 2021
+    authors:
+      - "Jean-Romain Luttringer"
+      - "Thomas Alfroy"
+      - "Pascal Mérindol"
+      - "François Clad"
+      - "Cristel Pelsser"
+    abstract: "This paper addresses the computation and deployment of multi-constrained paths using Segment Routing."
+    links:
+      OA Link: "https://hal.science/hal-03216327"
+      Slides: "https://seafile.unistra.fr/f/bd424ca1504145868dde/"
+    awards:
+      - "Best Paper Award"
+
+  - title: "L'Art d'Anticiper les Changements IGP pour Acheminer Optimalement la Patate en Transit"
+    venue: "CORES"
+    year: 2021
+    authors:
+      - "Jean-Romain Luttringer"
+      - "Quentin Bramas"
+      - "Cristel Pelsser"
+      - "Pascal Mérindol"
+    abstract: "The paper discusses strategies for anticipating IGP changes to optimize hot-potato routing."
+    links:
+      OA Link: "https://hal.science/hal-03221273"
+      Slides: https://seafile.unistra.fr/f/bfaf9cf9b92d47a7a618/
+
+  - title: "La ROUTOURNE va tourner: le retour des tours de détours sous leurs plus beaux atours"
+    venue: "ALGOTEL"
+    year: 2024
+    authors:
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Pascal Mérindol"
+    abstract: "This work presents ROUTOURNE, a framework for deploying optimal routes with source routing."
+    links:
+      OA Link: "https://hal.science/hal-04567055"
+
+
+preprints:
+  []
+
+
+thesis:
+  - title: "Path Computation in IP Networks: Reliable Hot-Potato Routing and Multi-Constrained Tunnels (Ph.D.)"
+    year: 2022
+    venue: "Ph.D. Thesis, University of Strasbourg"
+    authors:
+      - "Jean-Romain Luttringer"
+    abstract: "This thesis focuses on path computation in IP networks, addressing reliable hot-potato routing and multi-constrained tunnels."
+    links:
+      url: "https://publication-theses.unistra.fr/public/theses_doctorat/2022/LUTTRINGER_Jean-Romain_2022_ED269.pdf"
+      poster: "https://seafile.unistra.fr/f/b5c939c806214c118de0/"
+      slides: "https://seafile.unistra.fr/f/c79e162a5ae347a0b964/"
+    awards:
+      - "Thesis award, Unistra"
+  
+  - title: "OPTIC: An Efficient BGP Protection Technique For Optimal Intra-domain Convergence (Master)"
+    year: 2019
+    venue: "Master's Thesis, University of Strasbourg"
+    authors:
+      - "Jean-Romain Luttringer"
+    links: 
+      url: "https://clarinet.icube.unistra.fr/~merindol/uploads/Research/optic.pdf"
+      slides: "https://seafile.unistra.fr/f/4e3662eb0e2d4de8b3f4/"
+

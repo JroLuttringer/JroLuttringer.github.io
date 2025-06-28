@@ -1,0 +1,126 @@
+/* Timeline styling */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 30px 0;
+}
+
+/* The vertical line */
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 150px; /* Align the line with the dots */
+  width: 2px;
+  background-color: #e5e7eb;
+}
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+/* The dots/circles on the timeline */
+.timeline-dot {
+  position: absolute;
+  left: 143px; /* Position the dot on the line (150px - 14px/2) */
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ff6b35;
+  border: 2px solid white;
+  z-index: 1;
+  top: 5px; /* Align vertically */
+}
+
+/* Date styling */
+.timeline-date {
+  width: 130px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+/* Content styling */
+.timeline-content {
+  margin-left: 50px; /* Give some space after the line */
+  padding: 0 0 0 20px;
+  flex-grow: 1;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #121212;
+}
+
+.timeline-content h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.timeline-content .location {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.timeline-content p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    padding-left: 70px;
+  }
+  
+  .timeline-dot {
+    left: 28px; /* Adjusted to align with line in mobile view */
+    top: 10px; /* Keep consistent with desktop view */
+  }
+  
+  .timeline-date {
+    width: 100%;
+    position: relative;
+    left: 0;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 0;
+    margin-bottom: 0.75rem;
+  }
+  
+  .timeline-date span {
+    display: inline-block;
+  }
+}

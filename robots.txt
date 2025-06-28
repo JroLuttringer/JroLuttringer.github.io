@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://jroluttringer.github.io/sitemap.xml

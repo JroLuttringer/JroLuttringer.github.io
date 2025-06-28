@@ -1,0 +1,98 @@
+/* Tools page styling */
+.tools-section {
+  max-width: 1000px; /* Reduced from 1200px */
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem; /* Reduced from 2rem */
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column; /* Changed from row to column */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%; /* Make sure both cards have the same height */
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tool-content {
+  padding: 1.25rem; /* Reduced from 1.5rem */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem; /* Reduced from 1rem */
+  font-size: 1.3rem; /* Reduced from 1.5rem */
+  color: #121212;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.tool-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #ff6b35; /* Orange accent */
+}
+
+.tool-content p {
+  margin-bottom: 1rem; /* Reduced from 1.5rem */
+  font-size: 0.95rem; /* Reduced from 1rem */
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.tool-actions {
+  display: flex;
+  gap: 0.5rem; /* Reduced from 0.75rem */
+  flex-wrap: wrap;
+  margin-top: auto; /* Push to bottom of flex container */
+}
+
+.tool-image {
+  width: 100%; /* Take full width in column layout */
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem; /* Reduced from 1rem */
+  order: -1; /* Move image to top */
+}
+
+.tool-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 16/10; /* Slightly less height */
+  object-fit: cover;
+}
+
+/* Placeholder style for image placeholders */
+.tool-image.placeholder {
+  background: linear-gradient(45deg, #f5f5f5 25%, #e0e0e0 25%, #e0e0e0 50%, #f5f5f5 50%, #f5f5f5 75%, #e0e0e0 75%);
+  background-size: 20px 20px;
+  aspect-ratio: 16/10; /* Match the updated ratio */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .tools-section {
+    grid-template-columns: 1fr; /* Stack vertically on smaller screens */
+  }
+}

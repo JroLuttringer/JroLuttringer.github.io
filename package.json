@@ -1,0 +1,30 @@
+{
+  "name": "academic-website",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "version": "vinxi version",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .output/public"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.15.3",
+    "@solidjs/start": "^1.1.0",
+    "chart.js": "^4.4.9",
+    "install": "^0.13.0",
+    "js-yaml": "^4.1.0",
+    "npm": "^11.4.1",
+    "solid-js": "^1.9.5",
+    "vinxi": "^0.5.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "vite-plugin-raw": "^1.0.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
