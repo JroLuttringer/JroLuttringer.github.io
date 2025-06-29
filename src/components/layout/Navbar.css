@@ -34,7 +34,7 @@
 
 .navbar-links {
   display: flex;
-  gap: 2rem; /* Increased from 1.5rem for better spacing */
+  gap: 1.5rem; /* Increased from 1.5rem for better spacing */
   align-items: center; /* Ensure proper vertical alignment */
 }
 
@@ -86,17 +86,27 @@
 }
 
 /* Responsive design */
-@media (max-width: 1024px) {
-  .navbar-links {
-    gap: 1.5rem; /* Reduce gap on medium screens */
-  }
-  
-  .nav-link {
-    font-size: 0.9rem; /* Slightly smaller font */
+@media (max-width: 1200px) {
+  .navbar-container {
+    padding: 1rem 1.5rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 1rem 1rem;
+  }
+  
+  .navbar-links {
+    gap: 1.2rem; /* Reduce gap on medium screens */
+  }
+  
+  .nav-link {
+    font-size: 0.85rem; /* Smaller font to fit better */
+  }
+}
+
+@media (max-width: 1300px) {
   .menu-toggle {
     display: block;
   }
@@ -108,16 +118,16 @@
     flex-direction: column;
     width: 100%;
     background-color: #121212;
-    padding: 1rem 0;
+    padding: 0 2rem;
     gap: 0;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: max-height 0.2s ease-out, opacity 0.15s ease-out;
     opacity: 0;
   }
 
   .navbar-links.active {
-    height: auto;
+    max-height: 500px; /* Enough to contain all nav items */
     opacity: 1;
     padding: 1rem 2rem;
   }
@@ -125,5 +135,20 @@
   .nav-link {
     width: 100%;
     padding: 0.75rem 0;
+    font-size: 1rem; /* Reset font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0.75rem 1rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.3rem;
+  }
+  
+  .navbar-links.active {
+    padding: 1rem 1rem;
   }
 }
