@@ -1,4 +1,16 @@
-import{e as se,a as yt,D as Ro,t as ct,j as B,b as oe,k as kt,G as Eo,f as Io,h as Fo,H as rn,S as an,I as ln,n as Fe,p as cn}from"./web-CgP7nCAW.js";import{j as zo}from"./js-yaml-mbYHt68G.js";import{T as Bo}from"./index-rzb3QVRB.js";const No=`journals:
+import{e as se,a as yt,D as Ro,t as ct,j as B,b as oe,k as kt,G as Eo,f as Io,h as Fo,H as rn,S as an,I as ln,n as Fe,p as cn}from"./web-CgP7nCAW.js";import{j as zo}from"./js-yaml-mbYHt68G.js";import{T as Bo}from"./index-rzb3QVRB.js";const No=`
+journals:
+  - title: "On time-travel planning in dynamic graphs"
+    year: 2025
+    venue: "Theoretical Computer Science"
+    editor: "Elsevier"
+    authors:
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Sébastien Tixeuil"
+    links:
+      doi: "https://doi.org/10.1016/j.tcs.2025.115501"
+
   - title: "A Simple and General Operational Framework to Deploy Optimal Routes with Source Routing"
     year: 2025
     venue: "Transactions on Networking"

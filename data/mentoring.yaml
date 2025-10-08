@@ -1,4 +1,15 @@
-phdStudents: []
+phdStudents: 
+  - title: "Towards Eco-Efficient Autonomous Networks: Deep Programmability and Energy-Aware Routing Protocols"
+    year: 2025-2028
+    name: "Florent Hardy"
+    supervision: "co-supervision"
+    description: "ANR JCJC Project GARDEN"
+  
+  - title: "Detection and Mitigation of Performance Anomalies in Core Networks"
+    year: 2025-2028
+    name: "Maxime Friess"
+    supervision: "co-supervision"
+    description: "ANR TSIA Project TURFU"
 
 master2Students:
   - title: "Improving energy efficiency of (programmable) networks"
@@ -17,9 +28,14 @@ master2Students:
     year: 2025
     name: "Amina Moalla"
     supervision: "co-supervision"
-    description: "Conducting a comprehensive study on gray failures in computer networks, focusing on taxonomy and data generation techniques."
+    description: ""
 
 master1Students:
+  - title: "Investigating the use of Neuro-Symbolic AI within computer networks"
+    year: 2025
+    name: "Céleste Kerlogot"
+    description: ""
+
   - title: "GOFOR-SR: A general framework to compute path for segment routing"
     year: 2024
     name: "Florent Hardy"

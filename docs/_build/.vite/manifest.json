@@ -3,19 +3,19 @@
     "file": "assets/HttpStatusCode-DjTx85av.js",
     "name": "HttpStatusCode"
   },
-  "_Navbar-JbAz6N1I.js": {
-    "file": "assets/Navbar-JbAz6N1I.js",
+  "_Navbar-CHmKU40r.css": {
+    "file": "assets/Navbar-CHmKU40r.css",
+    "src": "_Navbar-CHmKU40r.css"
+  },
+  "_Navbar-DMJfa7bb.js": {
+    "file": "assets/Navbar-DMJfa7bb.js",
     "name": "Navbar",
     "imports": [
       "_web-CgP7nCAW.js"
     ],
     "css": [
-      "assets/Navbar-_bJs7sTM.css"
+      "assets/Navbar-CHmKU40r.css"
     ]
-  },
-  "_Navbar-_bJs7sTM.css": {
-    "file": "assets/Navbar-_bJs7sTM.css",
-    "src": "_Navbar-_bJs7sTM.css"
   },
   "_index-rzb3QVRB.js": {
     "file": "assets/index-rzb3QVRB.js",
@@ -127,18 +127,18 @@
     ]
   },
   "src/routes/layout.tsx?pick=default&pick=$css": {
-    "file": "assets/layout-Y197DlOA.js",
+    "file": "assets/layout-Df0BBH7U.js",
     "name": "layout",
     "src": "src/routes/layout.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-CgP7nCAW.js",
-      "_Navbar-JbAz6N1I.js"
+      "_Navbar-DMJfa7bb.js"
     ]
   },
   "src/routes/mentoring.tsx?pick=default&pick=$css": {
-    "file": "assets/mentoring-Cxd3tnHI.js",
+    "file": "assets/mentoring-B78bvyI0.js",
     "name": "mentoring",
     "src": "src/routes/mentoring.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -181,7 +181,7 @@
     ]
   },
   "src/routes/publications.tsx?pick=default&pick=$css": {
-    "file": "assets/publications-CCFzQMKD.js",
+    "file": "assets/publications-BzLH9MwO.js",
     "name": "publications",
     "src": "src/routes/publications.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -231,13 +231,13 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-Egoa0afi.js",
+    "file": "assets/client-DqKQFoyK.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
     "imports": [
       "_web-CgP7nCAW.js",
-      "_Navbar-JbAz6N1I.js",
+      "_Navbar-DMJfa7bb.js",
       "_index-rzb3QVRB.js",
       "_HttpStatusCode-DjTx85av.js"
     ],

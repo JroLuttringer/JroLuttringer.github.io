@@ -1,4 +1,16 @@
+
 journals:
+  - title: "On time-travel planning in dynamic graphs"
+    year: 2025
+    venue: "Theoretical Computer Science"
+    editor: "Elsevier"
+    authors:
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Sébastien Tixeuil"
+    links:
+      doi: "https://doi.org/10.1016/j.tcs.2025.115501"
+
   - title: "A Simple and General Operational Framework to Deploy Optimal Routes with Source Routing"
     year: 2025
     venue: "Transactions on Networking"
