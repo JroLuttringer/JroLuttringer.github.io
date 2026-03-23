@@ -12,6 +12,13 @@ phdStudents:
     description: "ANR TSIA Project TURFU"
 
 master2Students:
+  - title: "Study of Gray Failures in Computer Networks : Testbed and Diagnosis"
+    year: 2026
+    name: "Céleste Kerlogot"
+    supervision: "co-supervision"
+    description: "Creation of a testbed to study gray failures in computer networks, and development of diagnosis techniques."
+
+
   - title: "Improving energy efficiency of (programmable) networks"
     year: 2025
     name: "Florent Hardy"

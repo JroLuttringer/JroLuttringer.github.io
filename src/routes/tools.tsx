@@ -25,6 +25,32 @@ export default function Tools() {
             <img src="/images/GST-pic.webp" alt="Graphic Subnetting Tool screenshot" />
           </div>
         </div>
+
+        <div class="tool-card">
+          <div class="tool-content">
+            <h2>Layer 2 Playground</h2>
+            <p>Visual Network Simulation to illustration Layer 2 and Layer 3 concepts (encapsulation, spanning tree, learning switches...).</p>
+            <div class="tool-actions">
+              <a href="https://jro.pages.unistra.fr/stpviz/" class="button" target="_blank" rel="noopener noreferrer">Use Tool</a>
+            </div>
+          </div>
+          <div class="tool-image">
+            <img src="/images/L2P-picture.png" alt="L2P screenshot" />
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-content">
+            <h2>The Signal Frontier</h2>
+            <p>Linear scale solar system and beyond to see LEO/GEO orbits, and the latency of deep-space communications.</p>
+            <div class="tool-actions">
+              <a href="https://jro.pages.unistra.fr/thesignalfrontier/" class="button" target="_blank" rel="noopener noreferrer">Use Tool</a>
+            </div>
+          </div>
+          <div class="tool-image">
+            <img src="/images/TSF-picture.png" alt="The Signal Frontier screenshot" />
+          </div>
+        </div>
         
         <div class="tool-card">
           <div class="tool-content">

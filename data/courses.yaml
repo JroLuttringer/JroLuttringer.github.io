@@ -113,6 +113,8 @@ terSubjects:
     - "P4Dummies, Generating code for programmable networks"
     - "BGP Blackjack"
     - "Quality of Service with Segment Routing"
+    - "Lord of the Links : Evolving Network Topologies"
+
   
   column2:
     - "The Insecurity of BGP"
@@ -122,3 +124,4 @@ terSubjects:
     - "Visualizing Best2cop, a DCLC algorithm"
     - "Visualizing Time-traveling algorithms"
     - "Checking the coherence of time-travels to prevent paradoxes"
+    - "Back to the Future : Evaluating Green Networking Solutions"

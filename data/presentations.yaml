@@ -1,5 +1,9 @@
 scientific:
-
+  - title: "Tackling Complex Traffic-Engineering Problems in Wired Networks : An experimental and serendipitous approach"
+    date: "31/01/2024"
+    venue: "GDR RSD"
+    description: "Discovering a new DCLC algorithm for SR while trying to evaluate our own"
+    slides: "https://seafile.unistra.fr/f/a60d4c0153f54f4d9301/"
 
 misc:
   - title: "Retour d’expérience sur les auditions en tant que jeune Maître de Conférences"
