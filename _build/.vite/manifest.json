@@ -84,7 +84,7 @@
     ]
   },
   "src/routes/courses.tsx?pick=default&pick=$css": {
-    "file": "assets/courses-3Tut0rrH.js",
+    "file": "assets/courses-DhxTMTVa.js",
     "name": "courses",
     "src": "src/routes/courses.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -138,7 +138,7 @@
     ]
   },
   "src/routes/mentoring.tsx?pick=default&pick=$css": {
-    "file": "assets/mentoring-BZ9B7v6Z.js",
+    "file": "assets/mentoring-B78bvyI0.js",
     "name": "mentoring",
     "src": "src/routes/mentoring.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -217,7 +217,7 @@
     ]
   },
   "src/routes/tools.tsx?pick=default&pick=$css": {
-    "file": "assets/tools-a8TIHZnr.js",
+    "file": "assets/tools-Cz_zAt4X.js",
     "name": "tools",
     "src": "src/routes/tools.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -231,7 +231,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-C8BnerH3.js",
+    "file": "assets/client-DqKQFoyK.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
