@@ -16,7 +16,13 @@ export interface PresentationsData {
 // Presentations data - updated with actual data from presentations.yaml
 export const presentations: PresentationsData = {
   scientific: [
-    // No scientific presentations yet
+    {
+      title: "Tackling Complex Traffic-Engineering Problems in Wired Networks : An experimental and serendipitous approach",
+      date: "2024-01-31",
+      venue: "GDR RSD",
+      description: "Discovering a new DCLC algorithm for SR while trying to evaluate our own",
+      slides: "https://seafile.unistra.fr/f/a60d4c0153f54f4d9301/"
+    }
   ],
   misc: [
     {
