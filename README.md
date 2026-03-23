@@ -30,3 +30,25 @@ Solid apps are built with _presets_, which optimise your project for deployment 
 By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different preset, add it to the `devDependencies` in `package.json` and specify in your `app.config.js`.
 
 ## This project was created with the [Solid CLI](https://solid-cli.netlify.app)
+
+
+## Deployment Memo: GitHub Pages
+
+To deploy this site to GitHub Pages:
+
+1. **Build the site:**
+	```bash
+	npm run build
+	```
+
+2. **Deploy to GitHub Pages:**
+	```bash
+	npx gh-pages --dotfiles -d docs
+	```
+
+3. **Push to your repository** (if needed):
+	```bash
+	git push
+	```
+
+
