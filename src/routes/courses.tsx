@@ -5,30 +5,35 @@ import "./courses.css";
 
 export default function Courses() {
   return (
-    <div class="container">
+    <div class="container page-enter">
       <Title>Courses & Materials - Jean-Romain Luttringer</Title>
       <h1>Courses & Materials</h1>
       
       <section class="section">
         <h2>Current Courses</h2>
         
-        <div class="courses-grid">
+        <div class="courses-grid stagger-in">
           <For each={courses.currentCourses}>
             {(course) => (
               <div class={`card ${course.role}`}>
                 <span class="course-role">{course.role === 'coordinator' ? 'Coordinator' : 
-                                          course.role === 'co-coordinator' ? 'Co-coordinator' : 'Instructor'}</span>
-                <div class="card-content">
-                  <h3>{course.title}</h3>
-                  <p><strong>Level:</strong> {course.level}</p>
-                  <p><strong>Duration:</strong> {course.duration}</p>
-                  {course.volume && <p><strong>Volume:</strong> {course.volume}</p>}
-                  <p class="description"><em>{course.description}</em></p>
+                                        course.role === 'co-coordinator' ? 'Co-coordinator' : 'Instructor'}</span>
+                <h3>{course.title}</h3>
+                <div class="card-meta">
+                  <span>{course.level}</span>
+                  <span class="meta-sep">·</span>
+                  <span>{course.duration}</span>
+                </div>
+                {course.volume && (
+                  <div class="card-volume">{course.volume}</div>
+                )}
+                <div class="card-topics">
+                  {course.description.split(',').map((topic: string) => (
+                    <span class="topic-chip">{topic.trim()}</span>
+                  ))}
                 </div>
                 {course.materials && (
-                  <div class="button-container">
-                    <a href={course.materials} class="button" target="_blank" rel="noopener noreferrer">Materials</a>
-                  </div>
+                  <a href={course.materials} class="materials-link" target="_blank" rel="noopener noreferrer">Materials</a>
                 )}
               </div>
             )}
@@ -36,26 +41,31 @@ export default function Courses() {
         </div>
       </section>
       
-      <section class="section">
+      <section class="section section-past">
         <h2>Previous Courses</h2>
         
-        <div class="courses-grid">
+        <div class="courses-grid stagger-in">
           <For each={courses.previousCourses}>
             {(course) => (
               <div class={`card ${course.role}`}>
                 <span class="course-role">{course.role === 'coordinator' ? 'Coordinator' : 
-                                          course.role === 'co-coordinator' ? 'Co-coordinator' : 'Instructor'}</span>
-                <div class="card-content">
-                  <h3>{course.title}</h3>
-                  <p><strong>Level:</strong> {course.level}</p>
-                  <p><strong>Duration:</strong> {course.duration}</p>
-                  {course.volume && <p><strong>Volume:</strong> {course.volume}</p>}
-                  <p class="description"><em>{course.description}</em></p>
+                                        course.role === 'co-coordinator' ? 'Co-coordinator' : 'Instructor'}</span>
+                <h3>{course.title}</h3>
+                <div class="card-meta">
+                  <span>{course.level}</span>
+                  <span class="meta-sep">·</span>
+                  <span>{course.duration}</span>
+                </div>
+                {course.volume && (
+                  <div class="card-volume">{course.volume}</div>
+                )}
+                <div class="card-topics">
+                  {course.description.split(',').map((topic: string) => (
+                    <span class="topic-chip">{topic.trim()}</span>
+                  ))}
                 </div>
                 {course.materials && (
-                  <div class="button-container">
-                    <a href={course.materials} class="button" target="_blank" rel="noopener noreferrer">Materials</a>
-                  </div>
+                  <a href={course.materials} class="materials-link" target="_blank" rel="noopener noreferrer">Materials</a>
                 )}
               </div>
             )}

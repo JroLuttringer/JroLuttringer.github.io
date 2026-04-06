@@ -5,11 +5,11 @@ export const prerender = true;
 
 export default function Projects() {
   return (
-    <div class="container">
+    <div class="container page-enter">
       <Title>Projects - Jean-Romain Luttringer</Title>
       <h1>Research Projects</h1>
       
-      <div class="projects-container">
+      <div class="projects-container stagger-in">
         {/* Project as Lead */}
         <div class="project-card lead-project">
           <div class="project-header">

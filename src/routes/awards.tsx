@@ -5,15 +5,15 @@ export const prerender = true;
 
 export default function Awards() {
   return (
-    <div class="container">
+    <div class="container page-enter">
       <Title>Awards - Jean-Romain Luttringer</Title>
       <h1>Awards & Recognition</h1>
       
-      <div class="awards-grid">
+      <div class="awards-grid stagger-in">
         <div class="award-card">
-          <div class="award-medal">🏆</div>
           <div class="award-content">
-            <h3>Ph.D. Thesis Prize of the University of Strasbourg</h3>
+            <h3>🏆 Ph.D. Thesis Prize of the University of Strasbourg</h3>
+            <span class="award-year">2023</span>
             <p class="award-description">
               For <strong>"Path Computation in IP Networks: Reliable Hot-Potato Routing and Multi-Constrained Tunnels"</strong>
             </p>
@@ -22,9 +22,9 @@ export default function Awards() {
         </div>
         
         <div class="award-card">
-          <div class="award-medal">🥇</div>
           <div class="award-content">
-            <h3>Best Paper Award of ALGOTEL 21</h3>
+            <h3>🥇 Best Paper Award of ALGOTEL 21</h3>
+            <span class="award-year">2021</span>
             <p class="award-description">
               For <strong>"Le Problème à trois Contraintes: Calcul et Déploiement de Segments de Routage"</strong>
             </p>
@@ -33,9 +33,9 @@ export default function Awards() {
         </div>
         
         <div class="award-card">
-          <div class="award-medal">🏅</div>
           <div class="award-content">
-            <h3>Internet Technical Committee/ISOC Paper of the Year 2019</h3>
+            <h3>🏅 Internet Technical Committee/ISOC Paper of the Year 2019</h3>
+            <span class="award-year">2019</span>
             <p class="award-description">
               For <strong>"TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels"</strong>
             </p>
@@ -43,9 +43,9 @@ export default function Awards() {
         </div>
         
         <div class="award-card">
-          <div class="award-medal">🥇</div>
           <div class="award-content">
-            <h3>Best Paper Award of TMA 19</h3>
+            <h3>🥇 Best Paper Award of TMA 19</h3>
+            <span class="award-year">2019</span>
             <p class="award-description">
               For <strong>"TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels"</strong>
             </p>
@@ -53,9 +53,9 @@ export default function Awards() {
         </div>
         
         <div class="award-card">
-          <div class="award-medal">🥈</div>
           <div class="award-content">
-            <h3>Runner Up for Best Open Dataset of TMA 19</h3>
+            <h3>🥈 Runner Up for Best Open Dataset of TMA 19</h3>
+            <span class="award-year">2019</span>
             <p class="award-description">
               For <strong>"TNT, Watch me Explode: A Light in the Dark for Revealing MPLS Tunnels"</strong>
             </p>
@@ -63,9 +63,9 @@ export default function Awards() {
         </div>
         
         <div class="award-card">
-          <div class="award-medal">🥇</div>
           <div class="award-content">
-            <h3>Best Poster Award (Doctoral School)</h3>
+            <h3>🥇 Best Poster Award (Doctoral School)</h3>
+            <span class="award-year">2021</span>
             <p class="award-description">
               For my thesis' poster
             </p>

@@ -18,6 +18,15 @@ export default function PublicationsPage() {
   const [selectedTypes, setSelectedTypes] = createSignal<string[]>([
     "journals", "conferences", "national_conferences", "workshops", "preprints", "thesis"
   ]);
+
+  const publicationTypeOptions = [
+    { id: "journals", label: "Journals", color: "#c46a3a" },
+    { id: "conferences", label: "International Conferences", color: "#5b8fb9" },
+    { id: "national_conferences", label: "National Conferences", color: "#5a9e6f" },
+    { id: "workshops", label: "Workshops", color: "#8b7bb0" },
+    { id: "preprints", label: "Preprints", color: "#c4a24e" },
+    { id: "thesis", label: "Thesis", color: "#5a6b7a" },
+  ] as const;
   
   // Additional filter states
   const [selectedVenues, setSelectedVenues] = createSignal<string[]>([]);
@@ -243,32 +252,32 @@ export default function PublicationsPage() {
       {
         label: 'Journal Articles',
         data: years.map(year => filteredCounts[year]?.journals || 0),
-        backgroundColor: '#ff6b35',
+        backgroundColor: '#c46a3a',
       },
       {
         label: 'International Conferences',
         data: years.map(year => filteredCounts[year]?.conferences || 0),
-        backgroundColor: '#3498db',
+        backgroundColor: '#5b8fb9',
       },
       {
         label: 'National Conferences',
         data: years.map(year => filteredCounts[year]?.national_conferences || 0),
-        backgroundColor: '#2ecc71',
+        backgroundColor: '#5a9e6f',
       },
       {
         label: 'Workshops',
         data: years.map(year => filteredCounts[year]?.workshops || 0),
-        backgroundColor: '#9b59b6',
+        backgroundColor: '#8b7bb0',
       },
       {
         label: 'Preprints',
         data: years.map(year => filteredCounts[year]?.preprints || 0),
-        backgroundColor: '#f39c12',
+        backgroundColor: '#c4a24e',
       },
       {
         label: 'Thesis',
         data: years.map(year => filteredCounts[year]?.thesis || 0),
-        backgroundColor: '#34495e',
+        backgroundColor: '#5a6b7a',
       }
     ];
     
@@ -386,18 +395,16 @@ export default function PublicationsPage() {
 
     return (
       <div style="margin-bottom: 1rem;">
-        {/* Title and Select All in same row with proper styling */}
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-          <span style="font-size: 0.875rem; font-weight: 500; color: #4b5563;">{props.title}</span>
+        <div class="publications-filter-header">
+          <span class="publications-filter-title">{props.title}</span>
           <button 
             onClick={props.toggleAll}
-            style="font-size: 0.75rem; color: #ff6b35; cursor: pointer; background: none; border: none; text-decoration: underline;"
+            class="publications-link-button"
           >
             {props.allSelected ? 'Deselect All' : props.someSelected ? 'Select All' : 'Select All'}
           </button>
         </div>
         
-        {/* Search field with consistent styling */}
         {props.showSearch && (
           <div style="margin-bottom: 0.5rem;">
             <input
@@ -405,22 +412,22 @@ export default function PublicationsPage() {
               placeholder={props.searchPlaceholder || `Filter ${props.title.toLowerCase()}...`}
               value={filterQuery()}
               onInput={(e) => setFilterQuery(e.currentTarget.value)}
-              style="width: 100%; padding: 0.375rem 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; background-color: white; font-size: 0.75rem; box-sizing: border-box;"
+              class="publications-input"
+              style="font-size: 0.75rem;"
             />
           </div>
         )}
         
-        {/* Items with consistent checkbox styling */}
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; max-height: 12rem; overflow-y: auto; padding: 0.25rem;">
           {filteredItems().map(item => (
-            <label style="display: flex; align-items: center; cursor: pointer; position: relative; padding: 0.25rem 0.5rem; background-color: #f9fafb; border-radius: 0.25rem; border: 1px solid #e5e7eb;">
+            <label style="display: flex; align-items: center; cursor: pointer; position: relative; padding: 0.25rem 0.5rem; background-color: var(--color-surface-alt); border-radius: 0.25rem; border: 1px solid var(--color-border);">
               <div style={`
                 width: 0.875rem; 
                 height: 0.875rem; 
                 margin-right: 0.375rem; 
-                border: 1px solid ${item.checked ? '#ff6b35' : '#d1d5db'};
+                border: 1px solid ${item.checked ? 'var(--color-accent)' : 'var(--color-border)'};
                 border-radius: 0.25rem;
-                background-color: ${item.checked ? '#ff6b35' : 'white'};
+                background-color: ${item.checked ? 'var(--color-accent)' : 'var(--color-surface)'};
                 position: relative;
                 cursor: pointer;
                 display: flex;
@@ -429,7 +436,7 @@ export default function PublicationsPage() {
               `}>
                 {item.checked && (
                   <svg 
-                    style="width: 0.675rem; height: 0.675rem; color: white; position: absolute;"
+                    style="width: 0.675rem; height: 0.675rem; color: var(--color-surface); position: absolute;"
                     viewBox="0 0 20 20" 
                     fill="currentColor"
                   >
@@ -444,7 +451,7 @@ export default function PublicationsPage() {
                 onChange={item.onChange}
                 style="position: absolute; opacity: 0; width: 0.875rem; height: 0.875rem;"
               />
-              <span style="font-size: 0.75rem; color: #4b5563;">
+              <span style="font-size: 0.75rem; color: var(--color-text-secondary);">
                 {item.label}
               </span>
             </label>
@@ -521,38 +528,36 @@ export default function PublicationsPage() {
   const [showAdvancedFilters, setShowAdvancedFilters] = createSignal(false);
 
   return (
-    <main class="container p-4">
+    <main class="container p-4 page-enter">
       <Title>Publications - Jean-Romain Luttringer</Title>
       <h1 class="text-2xl font-bold mb-6">Publications</h1>
       
       {/* Publications Statistics Chart */}
-      <div class="mb-4 p-3 bg-gray-50 rounded-lg" style="height: 120px;">
+      <div class="publications-chart">
         <canvas ref={chartRef}></canvas>
       </div>
       
-      {/* SIMPLIFIED FILTERS WITH DIRECT INLINE STYLES */}
-      <div style="margin-bottom: 1.5rem; padding: 1rem; background-color: #f9fafb; border-radius: 0.5rem; border: 1px solid #e5e7eb;">
-        {/* Search with label on same line - fix text box overflow */}
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
+      <div class="publications-filter-panel">
+        <div class="publications-filter-row">
           <label 
             for="search-publications" 
-            style="font-size: 0.875rem; font-weight: 500; color: #4b5563; white-space: nowrap;"
+            class="publications-filter-label"
           >
             Search Publications:
           </label>
-          <div style="flex-grow: 1; position: relative; max-width: calc(100% - 140px);">
+          <div class="publications-filter-input-wrap">
             <input
               id="search-publications"
               type="text"
               placeholder="Title, author, venue..."
               value={searchQuery()}
               onInput={(e) => setSearchQuery(e.currentTarget.value)}
-              style="width: 100%; padding: 0.375rem 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; background-color: white; box-sizing: border-box;"
+              class="publications-input"
             />
             {searchQuery() && (
               <button 
                 onClick={() => setSearchQuery("")}
-                style="position: absolute; right: 0.5rem; top: 50%; transform: translateY(-50%); color: #9ca3af; cursor: pointer; background: none; border: none; padding: 0;"
+                class="publications-clear-button"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -563,48 +568,27 @@ export default function PublicationsPage() {
           </div>
         </div>
         
-        {/* Publication Type Filters with standard checkboxes */}
         <div>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-            <span style="font-size: 0.875rem; font-weight: 500; color: #4b5563;">Publication Types</span>
+          <div class="publications-filter-header">
+            <span class="publications-filter-title">Publication Types</span>
             <button 
               onClick={toggleAllTypes}
-              style="font-size: 0.75rem; color: #ff6b35; cursor: pointer; background: none; border: none; text-decoration: underline;"
+              class="publications-link-button"
             >
               {allTypesSelected() ? 'Deselect All' : 'Select All'}
             </button>
           </div>
           
-          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-            {[
-              { id: 'journals', label: 'Journals', color: '#ff6b35' },
-              { id: 'conferences', label: 'International Conferences', color: '#3498db' }, // Fixed label
-              { id: 'national_conferences', label: 'National Conferences', color: '#2ecc71' },
-              { id: 'workshops', label: 'Workshops', color: '#9b59b6' },
-              { id: 'preprints', label: 'Preprints', color: '#f39c12' },
-              { id: 'thesis', label: 'Thesis', color: '#34495e' }
-            ].map(item => (
-              <label style="display: flex; align-items: center; cursor: pointer; position: relative;">
-                <div style={`
-                  width: 1rem; 
-                  height: 1rem; 
-                  margin-right: 0.375rem; 
-                  border: 1px solid ${selectedTypes().includes(item.id) ? item.color : '#d1d5db'};
-                  border-radius: 0.25rem;
-                  background-color: ${selectedTypes().includes(item.id) ? item.color : 'white'};
-                  position: relative;
-                  cursor: pointer;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                `}>
-                  {/* Fixed checkmark alignment */}
+          <div class="publications-types-grid">
+            {publicationTypeOptions.map(item => (
+              <label class="publications-type-option">
+                <div
+                  class="publications-type-checkbox"
+                  classList={{ checked: selectedTypes().includes(item.id) }}
+                  style={{ "--type-color": item.color }}
+                >
                   {selectedTypes().includes(item.id) && (
-                    <svg 
-                      style="width: 0.75rem; height: 0.75rem; color: white; position: absolute;"
-                      viewBox="0 0 20 20" 
-                      fill="currentColor"
-                    >
+                    <svg viewBox="0 0 20 20" fill="currentColor">
                       <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                     </svg>
                   )}
@@ -615,7 +599,7 @@ export default function PublicationsPage() {
                   onChange={() => toggleType(item.id)}
                   style="position: absolute; opacity: 0; width: 1rem; height: 1rem;"
                 />
-                <span style="font-size: 0.875rem; color: #4b5563;">
+                <span class="publications-type-label">
                   {item.label}
                 </span>
               </label>
@@ -623,8 +607,7 @@ export default function PublicationsPage() {
           </div>
         </div>
         
-        {/* Reset and More Filters buttons */}
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #e5e7eb;">
+        <div class="publications-filter-footer">
           <button
             onClick={() => {
               setSearchQuery("");
@@ -633,30 +616,14 @@ export default function PublicationsPage() {
               setSelectedAuthors([]);
               setShowAdvancedFilters(false);
             }}
-            style="padding: 0.375rem 0.75rem; background-color: #e5e7eb; color: #374151; border-radius: 0.375rem; font-size: 0.75rem; cursor: pointer; border: none; transition: background-color 0.15s;"
-            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#d1d5db'}
-            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#e5e7eb'}
+            class="publications-reset-button"
           >
             Reset All Filters
           </button>
           
           <button 
             onClick={() => setShowAdvancedFilters(!showAdvancedFilters())}
-            style={{
-              color: '#ff6b35',
-              fontWeight: '500',
-              fontSize: '0.75rem',
-              cursor: 'pointer',
-              background: '#fff4f0',
-              border: '1px solid #ffded3',
-              borderRadius: '0.375rem',
-              padding: '0.375rem 0.75rem',
-              display: 'flex',
-              alignItems: 'center',
-              transition: 'background-color 0.15s'
-            }}
-            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#ffe9e0'}
-            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#fff4f0'}
+            class="publications-more-button"
           >
             {showAdvancedFilters() ? 'Hide additional filters' : 'More filters'}
             <svg 
@@ -676,10 +643,9 @@ export default function PublicationsPage() {
         </div>
       </div>
       
-      {/* Advanced Filters - Improve styling */}
       <Show when={showAdvancedFilters()}>
-        <div style="margin-top: -1rem; margin-bottom: 1.5rem; padding: 1rem; background-color: #fff; border: 1px solid #e5e7eb; border-top: none; border-bottom-left-radius: 0.5rem; border-bottom-right-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div class="publications-advanced-panel">
+          <div class="publications-advanced-grid">
             {/* Venue Filter */}
             <FilterSection
               title="Venue"
@@ -720,7 +686,7 @@ export default function PublicationsPage() {
         Object.entries(filteredPublicationsByYear())
           .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA)) // Sort years descending
           .map(([year, yearPubs]) => (
-          <section class="mb-12">
+          <section style="margin-bottom: 3rem;">
             <div class="year-divider">
               <div class="year-line"></div>
               <span class="year-label">{year}</span>
@@ -740,14 +706,14 @@ export default function PublicationsPage() {
           </section>
         ))
       ) : (
-        <div class="text-center py-8">
-          <p class="text-lg text-gray-600">No publications found matching your search criteria.</p>
+        <div class="publications-empty">
+          <p>No publications found matching your search criteria.</p>
           <button 
             onClick={() => {
               setSearchQuery("");
               setSelectedTypes(["journals", "conferences", "national_conferences", "workshops", "preprints", "thesis"]);
             }}
-            class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            class="button"
           >
             Reset Filters
           </button>

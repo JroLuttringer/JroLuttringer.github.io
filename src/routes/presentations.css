@@ -1,39 +1,39 @@
 /* Presentations page styling */
 
 .disclaimer {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  padding: 1.5rem;
+  background-color: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--card-radius);
+  padding: var(--space-card);
   margin-bottom: 2rem;
-  border-left: 4px solid #007bff;
+  border-left: 4px solid var(--color-pub-conference);
 }
 
 .disclaimer p {
   margin: 0;
-  color: #495057;
+  color: var(--color-text-secondary);
   line-height: 1.6;
 }
 
 .disclaimer a {
-  color: #007bff;
+  color: var(--color-pub-conference);
   text-decoration: none;
   font-weight: 500;
 }
 
 .disclaimer a:hover {
-  color: #0056b3;
+  color: var(--color-accent-hover);
   text-decoration: underline;
 }
 
 .presentation-section {
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-section);
 }
 
 .section-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #121212;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 0.5rem;
@@ -46,33 +46,33 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: #ff6b35;
+  background-color: var(--color-accent);
 }
 
 .presentations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-grid);
 }
 
 .presentation-card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  border-left: 4px solid #ff6b35;
+  background-color: var(--color-surface);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 4px solid var(--color-accent);
 }
 
 .presentation-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-md);
 }
 
 .presentation-card h3 {
   margin: 0 0 1rem 0;
   font-size: 1.25rem;
-  color: #121212;
+  color: var(--color-text);
   line-height: 1.4;
 }
 
@@ -82,12 +82,12 @@
   align-items: center;
   margin-bottom: 1rem;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 .venue {
   font-weight: 600;
-  color: #ff6b35;
+  color: var(--color-accent);
 }
 
 .date {
@@ -95,7 +95,7 @@
 }
 
 .description {
-  color: #555;
+  color: var(--color-text-secondary);
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -108,19 +108,19 @@
 .button-presentation {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #ff6b35;
+  background-color: var(--color-accent);
   color: white;
   text-decoration: none;
   border-radius: 4px;
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.2s ease;
-  border: 1px solid #ff6b35;
+  border: 1px solid var(--color-accent);
 }
 
 .button-presentation:hover {
-  background-color: #e55a2b;
-  border-color: #e55a2b;
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
   transform: translateY(-1px);
 }
 

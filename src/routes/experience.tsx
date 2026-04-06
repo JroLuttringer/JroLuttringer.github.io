@@ -5,11 +5,11 @@ export const prerender = true;
 
 export default function Experience() {
   return (
-    <div class="container">
+    <div class="container page-enter">
       <Title>Experience - Jean-Romain Luttringer</Title>
       <h1>Professional Experience</h1>
       
-      <div class="timeline">
+      <div class="timeline stagger-in">
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-date">

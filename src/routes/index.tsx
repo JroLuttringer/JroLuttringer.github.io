@@ -1,11 +1,26 @@
 import { Title } from "@solidjs/meta";
+import { Show, createSignal } from "solid-js";
 import "./index.css";
 
 export const prerender = true; 
 
 export default function Home() {
+  const [emailRevealed, setEmailRevealed] = createSignal(false);
+  const emailAddress = () => {
+    const user = ["jr", ".", "luttringer"].join("");
+    const domain = ["unistra", ".", "fr"].join("");
+    return `${user}@${domain}`;
+  };
+  const obfuscatedEmail = () => ["jr", "[dot]", "luttringer", "[at]", "unistra", "[dot]", "fr"].join(" ");
+
+  const revealEmail = () => setEmailRevealed(true);
+  const openEmail = () => {
+    setEmailRevealed(true);
+    window.location.href = `mailto:${emailAddress()}`;
+  };
+
   return (
-    <div class="container">
+    <div class="container page-enter">
       <Title>Jean-Romain Luttringer - Academic Portfolio</Title>
       
       <div class="home-grid">
@@ -20,6 +35,19 @@ export default function Home() {
             <p>Assistant Professor at the University of Strasbourg</p>
             <p>IUT Robert Schuman</p>
             <p>ICube Laboratory, Network Research Group</p>
+            <div class="profile-contact">
+              <button type="button" class="contact-button" onClick={openEmail}>
+                Email Me
+              </button>
+              <button type="button" class="contact-reveal" onClick={revealEmail}>
+                Reveal Address
+              </button>
+              <Show when={emailRevealed()}>
+                <p class="contact-address" aria-label="Email address">
+                  {obfuscatedEmail()}
+                </p>
+              </Show>
+            </div>
           </div>
         </div>
         
@@ -34,7 +62,7 @@ export default function Home() {
             </p>
           </section>
           
-          <div class="info-grid">
+          <div class="info-grid stagger-in">
             {/* Interests Section */}
             <section class="interests-section">
               <h3>Interests</h3>
@@ -68,7 +96,7 @@ export default function Home() {
       {/* Reviews Section - Full Width */}
       <section class="reviews-section">
         <h2>What Colleagues Say</h2>
-        <div class="reviews-container">
+        <div class="reviews-container stagger-in">
           <div class="review-card">
             <p class="review-text">
               <em>"Sometimes has intuitions that can sometimes prove useful"</em>

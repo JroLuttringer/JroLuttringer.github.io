@@ -1,12 +1,20 @@
-import { createSignal } from "solid-js";
+import { createSignal, onMount, onCleanup } from "solid-js";
 import { A, useLocation } from "@solidjs/router";
 import "./Navbar.css";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = createSignal(false);
+  const [scrolled, setScrolled] = createSignal(false);
   const location = useLocation();
+  let navRef: HTMLElement | undefined;
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen());
+
+  onMount(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onCleanup(() => window.removeEventListener("scroll", onScroll));
+  });
 
   // Helper function to check if a link is active
   const isActive = (path: string) => {
@@ -17,7 +25,6 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { href: "/", path: "/", label: "Home" },
     { href: "/experience", path: "/experience", label: "Experience" },
     { href: "/publications", path: "/publications", label: "Publications" },
     { href: "/presentations", path: "/presentations", label: "Presentations" },
@@ -30,7 +37,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav class="navbar">
+    <nav class={`navbar ${scrolled() ? 'scrolled' : ''}`} ref={navRef}>
       <div class="navbar-container">
         <div class="navbar-logo">
           <A href="/" class="logo-link">Jean-Romain Luttringer</A>

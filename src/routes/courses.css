@@ -1,6 +1,11 @@
 /* Courses & Materials page styling */
 .section {
-  margin-bottom: 4rem; /* Increased from 3rem for more spacing between sections */
+  margin-bottom: var(--space-section);
+}
+
+.section + .section {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-section);
 }
 
 .section h2 {
@@ -17,173 +22,164 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: #ff6b35; /* Orange accent */
+  background-color: var(--color-accent);
+}
+
+/* Muted style for past/historical sections */
+.section-past .card {
+  opacity: 0.7;
+}
+
+.section-past .card:hover {
+  opacity: 1;
 }
 
 /* Grid layout for courses */
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-  margin-bottom: 2.5rem; /* Increased from 1.5rem for more space before next section title */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-grid);
+  margin-bottom: 2.5rem;
 }
 
 /* Card styling for courses and materials */
 .card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-  padding: 1rem; /* Reduced from 1.25rem */
-  margin-bottom: 0; /* Removed bottom margin */
-  transition: all 0.3s ease;
+  padding: 1.25rem;
+  margin-bottom: 0;
   position: relative;
   border-left: 4px solid transparent;
-  height: auto; /* Changed from 100% to auto to prevent extra space */
-  min-height: 0; /* Allow card to be as small as content requires */
+  height: auto;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distributes content to push button to bottom */
-}
-
-.card-content {
-  flex-grow: 1; /* Allow content to grow and push button down */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Reduce spacing between paragraphs in card content */
-.card-content p {
-  margin: 0.25rem 0; /* Reduce vertical margin between paragraphs */
-  line-height: 1.3; /* Tighten line height */
-}
-
-.card-content h3 {
-  margin-bottom: 0.5rem; /* Add some space after the title */
-}
-
-.description {
-  margin-top: 0.5rem !important; /* Add slightly more space before description */
-}
-
-.button-container {
-  margin-top: auto; /* Push button to bottom of container */
-  padding-top: 0.5rem; /* Add a bit of space above button */
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card.coordinator {
-  border-left-color: #ff6b35; /* Orange for main responsibility */
-}
-
-.card.co-coordinator {
-  border-left-color: #4a90e2; /* Blue for shared responsibility */
-}
-
-.card.instructor {
-  border-left-color: #8e8e8e; /* Gray for TD/TP only */
 }
 
 .card h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-  color: #121212;
-  padding-right: 95px; /* Increased from 85px to give even more space for wrapped lines */
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+  color: var(--color-text);
   line-height: 1.3;
 }
 
-.card p {
-  margin-bottom: 0.4rem; /* Reduced from 0.5rem */
-  font-size: 0.9rem;
-  line-height: 1.4;
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.2rem;
 }
 
-.card .description {
-  flex-grow: 0; /* Changed from 1 to remove extra space */
-  margin-bottom: 0.5rem; /* Add small fixed margin at bottom */
+.card-meta .meta-sep {
+  color: var(--color-border);
 }
 
-.card ul {
-  padding-left: 1.5rem;
-  margin-bottom: 0;
-}
-
-.card li {
+.card-volume {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
   margin-bottom: 0.5rem;
 }
 
-.card li:last-child {
-  margin-bottom: 0;
+/* Topic chips — the description keywords */
+.card-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.topic-chip {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  background-color: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  font-size: 0.72rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+/* Materials link — lightweight text link */
+.materials-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: none;
+  margin-top: 0.6rem;
+  transition: color 0.15s ease;
+}
+
+.materials-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.materials-link::after {
+  content: '\2192';
+  font-size: 0.85rem;
+  transition: transform 0.15s ease;
+}
+
+.materials-link:hover::after {
+  transform: translateX(3px);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.card.coordinator {
+  border-left-color: var(--color-accent);
+}
+
+.card.co-coordinator {
+  border-left-color: var(--color-role-cocoordinator);
+}
+
+.card.instructor {
+  border-left-color: var(--color-role-instructor);
 }
 
 .course-role {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  padding: 0.2rem 0.4rem;
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
   border-radius: 4px;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  white-space: nowrap; /* Prevent wrapping of badge text */
-  z-index: 1;
+  white-space: nowrap;
+  margin-bottom: 0.4rem;
+  align-self: flex-start;
 }
 
 .coordinator .course-role {
-  background-color: #ff6b35;
+  background-color: var(--color-accent);
   color: white;
 }
 
 .co-coordinator .course-role {
-  background-color: #4a90e2;
+  background-color: var(--color-role-cocoordinator);
   color: white;
 }
 
 .instructor .course-role {
-  background-color: #f0f0f0;
-  color: #555;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.35rem 0.7rem; /* Slightly smaller padding */
-  background-color: #ff6b35;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: background-color 0.2s ease;
-  margin-top: 0; /* Changed from auto to remove extra space */
-  margin-bottom: 0; /* Ensure no margin below button */
-  align-self: flex-start;
-}
-
-.button:hover {
-  background-color: #e55a2b;
-}
-
-/* Materials cards */
-.materials-card {
-  margin-bottom: 1.5rem;
+  background-color: var(--color-border-light);
+  color: var(--color-text-secondary);
 }
 
 /* TER subjects styling */
 .ter-container {
   display: flex;
   gap: 2rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
+  background-color: var(--color-surface);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-card);
 }
 
 .ter-column {
@@ -200,7 +196,7 @@
   padding: 0.5rem 0;
   padding-left: 1.5rem;
   position: relative;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--color-border-light);
 }
 
 .ter-list li:last-child {
@@ -215,7 +211,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #ff6b35; /* Orange accent */
+  background-color: var(--color-accent);
 }
 
 /* Responsive adjustments */

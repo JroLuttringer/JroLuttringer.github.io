@@ -31,7 +31,7 @@ export default function PresentationsPage() {
   };
 
   return (
-    <main class="container p-4">
+    <main class="container p-4 page-enter">
       <Title>Presentations - Jean-Romain Luttringer</Title>
       <h1 class="text-2xl font-bold mb-6">Presentations</h1>
       
@@ -49,7 +49,7 @@ export default function PresentationsPage() {
       {/* Scientific Presentations */}
       <section class="presentation-section">
         <h2 class="section-title">Scientific Presentations</h2>
-        <div class="presentations-grid">
+        <div class="presentations-grid stagger-in">
           {presentations.scientific.map((presentation) => (
             <PresentationCard presentation={presentation} />
           ))}
@@ -59,7 +59,7 @@ export default function PresentationsPage() {
       {/* Miscellaneous Presentations */}
       <section class="presentation-section">
         <h2 class="section-title">Miscellaneous Presentations</h2>
-        <div class="presentations-grid">
+        <div class="presentations-grid stagger-in">
           {presentations.misc.map((presentation) => (
             <PresentationCard presentation={presentation} />
           ))}

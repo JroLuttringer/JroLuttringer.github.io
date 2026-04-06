@@ -27,7 +27,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   object-fit: cover;
   aspect-ratio: 1/1;
-  background-color: #e0e0e0; /* Placeholder background color */
+  background-color: var(--color-border);
 }
 
 .profile-info {
@@ -41,7 +41,56 @@
 
 .profile-info p {
   margin: 0.25rem 0;
-  color: #555;
+  color: var(--color-text-secondary);
+}
+
+.profile-contact {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.contact-button,
+.contact-reveal {
+  border-radius: 999px;
+  padding: 0.5rem 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-button {
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-surface);
+}
+
+.contact-button:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: var(--color-surface);
+}
+
+.contact-reveal {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+}
+
+.contact-reveal:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.contact-address {
+  width: 100%;
+  margin: 0.15rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
 }
 
 /* Content column (right) */
@@ -63,7 +112,7 @@
 }
 
 .biography-section p strong {
-  color: #121212;
+  color: var(--color-text);
 }
 
 /* Info grid for interests and education */
@@ -87,9 +136,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 40px;
+  width: 50px;
   height: 2px;
-  background-color: #ff6b35; /* Orange accent */
+  background-color: var(--color-accent);
 }
 
 .interests-section ul {
@@ -112,7 +161,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #ff6b35; /* Orange accent */
+  background-color: var(--color-accent);
 }
 
 .education-item {
@@ -135,7 +184,7 @@
 
 .education-item p {
   margin: 0;
-  color: #555;
+  color: var(--color-text-secondary);
   font-size: 0.95rem;
 }
 
@@ -143,7 +192,7 @@
 .reviews-section {
   margin-top: 1.5rem; /* Reduced from 3rem */
   padding-top: 1.5rem; /* Reduced from 2rem */
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--color-border);
 }
 
 .reviews-section h2 {
@@ -160,41 +209,44 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 50px;
   height: 2px;
-  background-color: #ff6b35; /* Orange accent */
+  background-color: var(--color-accent);
 }
 
 .reviews-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-grid);
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .review-card {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--color-surface);
+  padding: var(--space-card);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
 }
 
 .review-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .review-text {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--color-text-secondary);
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
 .reviewer {
-  text-align: right;
+  text-align: center;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
   margin: 0;
 }
 
@@ -218,8 +270,4 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .reviews-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+/* No longer needed — auto-fill handles responsive columns */

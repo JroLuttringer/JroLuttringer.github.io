@@ -5,34 +5,34 @@ export const prerender = true;
 
 export default function Activities() {
   return (
-    <div class="container">
+    <div class="container page-enter">
       <Title>Other Activities - Jean-Romain Luttringer</Title>
       <h1>Other Activities</h1>
       
       <div class="activities-container">
         <section class="activities-section">
           <h2>Conference Organization</h2>
-          <div class="activities-grid">
+          <div class="activities-grid stagger-in">
             <div class="activity-card">
-              <div class="activity-icon">🌐</div>
               <div class="activity-content">
-                <h3>IMC 2022 Conference</h3>
+                <h3>🌐 IMC 2022 Conference</h3>
+                <span class="activity-year">2022</span>
                 <p>International conference on Internet measurements. On-site organization, designed posters.</p>
               </div>
             </div>
             
             <div class="activity-card">
-              <div class="activity-icon">🎓</div>
               <div class="activity-content">
-                <h3>RESCOM 2021 Autumn School</h3>
+                <h3>🎓 RESCOM 2021 Autumn School</h3>
+                <span class="activity-year">2021</span>
                 <p>Autumn school on reproducibility. On-site help.</p>
               </div>
             </div>
             
             <div class="activity-card">
-              <div class="activity-icon">🌐</div>
               <div class="activity-content">
-                <h3>OPODIS 2021</h3>
+                <h3>🌐 OPODIS 2021</h3>
+                <span class="activity-year">2021</span>
                 <p>International conference on distributed systems. On-site help.</p>
               </div>
             </div>
@@ -41,11 +41,11 @@ export default function Activities() {
         
         <section class="activities-section">
           <h2>Academic Service</h2>
-          <div class="activities-grid">
+          <div class="activities-grid stagger-in">
             <div class="activity-card">
-              <div class="activity-icon">👥</div>
               <div class="activity-content">
-                <h3>Network Team PhD Students Representative (2021 to 2022)</h3>
+                <h3>👥 Network Team PhD Students Representative</h3>
+                <span class="activity-year">2021 – 2022</span>
                 <p>Link between Ph.D. student and laboratory direction during counsel meetings.</p>
               </div>
             </div>

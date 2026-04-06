@@ -5,7 +5,12 @@
 }
 
 .mentoring-section {
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-section);
+}
+
+.mentoring-section + .mentoring-section {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-section);
 }
 
 .mentoring-section h2 {
@@ -22,78 +27,127 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: #ff6b35; /* Orange accent */
+  background-color: var(--color-accent);
 }
 
 /* Students grid layout */
 .students-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-grid);
 }
 
 /* Student card styling */
 .student-card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
-  transition: all 0.3s ease;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .student-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
-.student-header {
+.student-card.is-current {
+  border-left: 3px solid var(--color-accent);
+  padding-left: calc(var(--space-card) - 2px);
+  background: linear-gradient(90deg, rgba(232, 117, 58, 0.06) 0%, var(--color-surface) 16%);
+  box-shadow: 0 0 0 1px rgba(232, 117, 58, 0.12), var(--shadow-sm);
+}
+
+.student-card.is-current .student-title {
+  color: var(--color-text);
+}
+
+.student-card:not(.is-current) {
+  filter: saturate(0.92);
+}
+
+.student-topline {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.75rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
-.student-header h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: #121212;
-  max-width: 75%;
+.status-badge {
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+  border: 1px solid rgba(232, 117, 58, 0.25);
+  padding: 0.14rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.status-badge::before {
+  content: "";
+  display: inline-block;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+.student-title {
+  margin: 0 0 0.65rem 0;
+  font-size: 1.16rem;
+  line-height: 1.25;
+  color: var(--color-text);
 }
 
 .year-badge {
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 0.3rem 0.6rem;
+  background-color: var(--color-border-light);
+  color: var(--color-text-secondary);
+  padding: 0.18rem 0.45rem;
   border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 0.74rem;
   font-weight: 600;
+  margin-left: auto;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .student-name {
-  color: #555;
+  color: var(--color-text-secondary);
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 0.75rem;
-  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.96rem;
 }
 
 .supervision {
   font-weight: normal;
   font-style: italic;
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
 }
 
-.student-card p:last-child {
-  margin-bottom: 0;
+.student-description {
+  margin: 0;
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
+.student-description-muted {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
 /* Empty card styling */
 .empty-card {
-  background-color: #f9f9f9;
-  border: 2px dashed #e0e0e0;
+  background-color: var(--color-surface-alt);
+  border: 2px dashed var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,8 +155,9 @@
 }
 
 .empty-card p {
+  margin: 0;
   font-style: italic;
-  color: #555;
+  color: var(--color-text-secondary);
 }
 
 /* Responsive adjustments */
