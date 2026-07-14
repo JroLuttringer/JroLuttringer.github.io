@@ -55,7 +55,7 @@
   .courses-list--two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1.6rem;
+    column-gap: 3rem;
     row-gap: 0;
   }
 
@@ -69,7 +69,7 @@
 .course-row {
   display: grid;
   grid-template-columns: 94px minmax(0, 1fr);
-  gap: 0.9rem;
+  gap: 1.4rem;
   align-items: start;
   padding: 0.9rem 0;
   border-bottom: 1px solid var(--color-border-light);

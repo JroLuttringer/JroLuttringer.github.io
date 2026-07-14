@@ -22,7 +22,7 @@ export default function Courses() {
         <p class="page-kicker">Teaching</p>
         <h1>Courses & Materials</h1>
         <p class="page-summary">
-          A compact overview of current and past teaching with access to course material when it is publicly available.
+          An overview of current and past teachings with access to course material when it is publicly available.
         </p>
       </header>
       

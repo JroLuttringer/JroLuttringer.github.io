@@ -14,12 +14,12 @@ tools:
       - label: "Documentation"
         href: "https://git.unistra.fr/jr.luttringer/gst"
 
-  - title: "Layer 2 Playground"
+  - title: "Net Playground"
     category: "Teaching Tools"
     focus:
       - "Layer 2"
       - "Layer 3"
-    description: "Visual network simulation to illustrate Layer 2 and Layer 3 concepts (encapsulation, spanning tree, learning switches...)."
+    description: "Visual configurable network simulation to illustrate Layer 2 and Layer 3 concepts (encapsulation, spanning tree, learning switches...)."
     image: "/images/L2P-picture.png"
     alt: "L2P screenshot"
     primaryAction:
