@@ -5,9 +5,15 @@ export const prerender = true;
 
 export default function Experience() {
   return (
-    <div class="container page-enter">
+    <div class="container page-shell page-enter">
       <Title>Experience - Jean-Romain Luttringer</Title>
-      <h1>Professional Experience</h1>
+      <header class="page-heading fade-in">
+        <p class="page-kicker">Career</p>
+        <h1>Professional Experience</h1>
+        {/* <p class="page-summary">
+          A chronological timeline of teaching and research roles, with emphasis on continuity in networking and programmable systems.
+        </p> */}
+      </header>
       
       <div class="timeline stagger-in">
         <div class="timeline-item">
@@ -19,7 +25,7 @@ export default function Experience() {
             <h3>Assistant Professor</h3>
             <h4>ICube, University of Strasbourg, Network Research Group</h4>
             <p class="location">Strasbourg, France</p>
-            <p>Teacher at the IUT Robert Schuman / Master's Degree. Research interests include routing and programmable networks.</p>
+            <p>Teaching at IUT Robert Schuman and in the Master's programme. Research interests include routing and programmable networks.</p>
           </div>
         </div>
         
@@ -46,10 +52,10 @@ export default function Experience() {
             <h3>Ph.D. Student in Computer Science</h3>
             <h4>ICube, University of Strasbourg, Network Research Group</h4>
             <p class="location">Strasbourg, France</p>
-            <p>Governemental fellowship.</p>
-            <p>Conception & evaluation of a multi-constrained paths algorithm for massive-scale Traffic-Engineering with Segment Routing (in collaboration with Cisco Systems).</p>
+            <p>Governmental fellowship.</p>
+            <p>Designed and evaluated a multi-constrained path algorithm for massive-scale traffic engineering with Segment Routing, in collaboration with Cisco Systems.</p>
             <p>Continued work on the BGP/IGP protection scheme OPTIC and its P4 implementation.</p>
-            <p>Taught 64h * 3 (64h per year) of courses on networking and system.</p>
+            <p>Taught 64 hours per year of networking and systems courses.</p>
           </div>
         </div>
         
@@ -62,7 +68,7 @@ export default function Experience() {
             <h3>Master thesis: OPTIC, Protecting BGP traffic from internal events</h3>
             <h4>ICube, University of Strasbourg, Network Research Group</h4>
             <p class="location">Strasbourg, France</p>
-            <p>Conception of OPTIC, a forwarding scheme protecting transiting BGP trafic from the effect of hot potato routing.</p>
+            <p>Designed OPTIC, a forwarding scheme protecting transiting BGP traffic from the effects of hot-potato routing.</p>
           </div>
         </div>
         
@@ -75,7 +81,7 @@ export default function Experience() {
             <h3>Research Internship: Inter-Domain network services supervision</h3>
             <h4>ICube, University of Strasbourg, Network Research Group</h4>
             <p class="location">Strasbourg, France</p>
-            <p>European project (Geant GN4) aiming at monitoring multi-domain VPN through active measurements within a distributed platform. Development of a python tools aggretating and correlating the measurements.</p>
+            <p>European project (GÉANT GN4) monitoring multi-domain VPNs through active measurements in a distributed platform. Developed a Python tool to aggregate and correlate measurements.</p>
           </div>
         </div>
         
@@ -88,7 +94,7 @@ export default function Experience() {
             <h3>Research Internship: Discovering Hidden MPLS tunnels</h3>
             <h4>ICube, University of Strasbourg, Network Research Group</h4>
             <p class="location">Strasbourg, France</p>
-            <p>Finding ways to detect and reveal hidden MPLS in the wild in a testbed, and implement the detection/revelation methods in a python tool.</p>
+            <p>Developed testbed methods and a Python tool to detect and reveal hidden MPLS tunnels in the wild.</p>
           </div>
         </div>
         
@@ -101,7 +107,7 @@ export default function Experience() {
             <h3>Research Internship: Parallel image reconstruction method for cryo-EM</h3>
             <h4>ICube, University of Strasbourg, ICPS</h4>
             <p class="location">Strasbourg, France</p>
-            <p>Porting to an HP grid of an image reconstruction algorithm. Live selection and duplication of most promising executions within a VM network to converge quicker to an optimum.</p>
+            <p>Ported an image-reconstruction algorithm to an HP grid, with live selection and duplication of promising executions in a VM network to converge more quickly on an optimum.</p>
           </div>
         </div>
       </div>

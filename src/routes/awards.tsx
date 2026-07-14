@@ -5,9 +5,15 @@ export const prerender = true;
 
 export default function Awards() {
   return (
-    <div class="container page-enter">
+    <div class="container page-shell page-enter">
       <Title>Awards - Jean-Romain Luttringer</Title>
-      <h1>Awards & Recognition</h1>
+      <header class="page-heading fade-in">
+        <p class="page-kicker">Recognition</p>
+        <h1>Awards & Recognition</h1>
+        <p class="page-summary">
+          Selected awards and distinctions received for research outputs, datasets, and doctoral work.
+        </p>
+      </header>
       
       <div class="awards-grid stagger-in">
         <div class="award-card">

@@ -2,7 +2,7 @@
 journals:
   - title: "On time-travel planning in dynamic graphs"
     year: 2025
-    venue: "Theoretical Computer Science"
+    venue: "Theoretical Computer Science (TCS)"
     editor: "Elsevier"
     authors:
       - "Quentin Bramas"
@@ -55,6 +55,32 @@ journals:
       preprint: "https://arxiv.org/abs/1901.10156"
 
 conferences:
+  - title: "BA: Time-Travel Planning with Tenet Turnstiles"
+    year: 2026
+    venue: "Symposium on Algorithmic Foundations of Dynamic Networks (SAND)"
+    editor: "Schloss Dagstuhl"
+    authors:
+      - "Thibaut Blanc"
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Sébastien Tixeuil"
+    abstract: "This paper explores offline and online algorithms for time-travel planning in dynamic graphs, where the time-travel model is inspired by the Tenet turnstiles."
+    links:
+      doi (OA): "https://doi.org/10.4230/LIPIcs.SAND.2026.22"
+      slides: "https://bramas.fr/static/SAND2026/SAND%202026%20-%20Online%20Time%20Travel.pdf"
+  
+  - title: "Online Space-Time Travel Planning in Dynamic Graphs"
+    venue: "Symposium on Algorithmic Foundations of Dynamic Networks (SAND)"
+    editor: "Schloss Dagstuhl"
+    year: 2024
+    authors:
+      - "Quentin Bramas"
+      - "Jean-Romain Luttringer"
+      - "Sébastien Tixeuil"
+    abstract: "This paper discusses online algorithms for space-time travel planning in dynamic graphs."
+    links:
+      doi (OA): "https://doi.org/10.4230/LIPIcs.SAND.2024.7"
+
   - title: Offline constrained backward time travel planning
     venue: "SSS"
     editor: "LNCS Springer"
@@ -67,18 +93,6 @@ conferences:
       doi: "https://doi.org/10.1007/978-3-031-44274-2_35"
       Preprint : "https://hal.science/hal-03655239v2/document"
 
-
-  - title: "Online Space-Time Travel Planning in Dynamic Graphs"
-    venue: "SAND"
-    editor: "Schloss Dagstuhl"
-    year: 2024
-    authors:
-      - "Quentin Bramas"
-      - "Jean-Romain Luttringer"
-      - "Sébastien Tixeuil"
-    abstract: "This paper discusses online algorithms for space-time travel planning in dynamic graphs."
-    links:
-      doi (OA): "https://doi.org/10.4230/LIPIcs.SAND.2024.7"
 
   - title: "A Fast-Convergence Routing of the Hot-Potato"
     venue: "INFOCOM"

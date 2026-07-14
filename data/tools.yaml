@@ -1,0 +1,74 @@
+tools:
+  - title: "Graphic Subnetting Tool"
+    category: "Teaching Tools"
+    focus:
+      - "IP Addressing"
+      - "Subnetting"
+    description: "Help students visualize IP address space and check whether their scheme is correct."
+    image: "/images/GST-pic.webp"
+    alt: "Graphic Subnetting Tool screenshot"
+    primaryAction:
+      label: "Use Tool"
+      href: "https://jr.luttringer.pages.unistra.fr/gst/"
+    secondaryActions:
+      - label: "Documentation"
+        href: "https://git.unistra.fr/jr.luttringer/gst"
+
+  - title: "Layer 2 Playground"
+    category: "Teaching Tools"
+    focus:
+      - "Layer 2"
+      - "Layer 3"
+    description: "Visual network simulation to illustrate Layer 2 and Layer 3 concepts (encapsulation, spanning tree, learning switches...)."
+    image: "/images/L2P-picture.png"
+    alt: "L2P screenshot"
+    primaryAction:
+      label: "Use Tool"
+      href: "https://jro.pages.unistra.fr/stpviz/"
+    secondaryActions: []
+
+  - title: "The Signal Frontier"
+    category: "Interactive Visualizations"
+    focus:
+      - "LEO/GEO"
+      - "Latency"
+    description: "A linear-scale solar system and beyond, showing LEO/GEO orbits and deep-space communication latency."
+    image: "/images/TSF-picture.png"
+    alt: "The Signal Frontier screenshot"
+    primaryAction:
+      label: "Use Tool"
+      href: "https://jro.pages.unistra.fr/thesignalfrontier/"
+    secondaryActions: []
+
+  - title: "Yet Another Realistic Graph Generator"
+    category: "Research Software"
+    focus:
+      - "Topology"
+      - "Geographical Data"
+    description: "Network topology generator based on geographical data."
+    image: "/images/YARGG-pic.webp"
+    alt: "Yet Another Realistic Graph Generator screenshot"
+    primaryAction:
+      label: "Code"
+      href: "https://github.com/JroLuttringer/YARGG"
+    secondaryActions:
+      - label: "Explanation"
+        href: "https://arxiv.org/abs/2110.09320"
+      - label: "Examples"
+        href: "https://zenodo.org/records/5535430#.ZAEBfi8w04g"
+  
+  - title: "Bienvenue en Fransse"
+    category: "Experimental / Random"
+    description: "Prepare for the French civil exam when applying for citizenship or a visa."
+    image: "/images/BEF.png"
+    primaryAction:
+      label: "Check it out"
+      href: "https://jro.pages.unistra.fr/bienvenuenfransse/"
+
+  - title: "Should I Grab the Coin?"
+    category: "Experimental / Random"
+    description: "Check whether grabbing a coin on the ground is worth your time."
+    image: "/images/SIGTC.png"
+    primaryAction:
+      label: "Check it out"
+      href: "https://jro.pages.unistra.fr/shouldigrabthecoin/"  

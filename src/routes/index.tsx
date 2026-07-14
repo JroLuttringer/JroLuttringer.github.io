@@ -20,7 +20,7 @@ export default function Home() {
   };
 
   return (
-    <div class="container page-enter">
+    <div class="container page-shell page-enter">
       <Title>Jean-Romain Luttringer - Academic Portfolio</Title>
       
       <div class="home-grid">
@@ -31,9 +31,10 @@ export default function Home() {
             <img src="/images/jro-pic.jpg" alt="Jean-Romain Luttringer" class="profile-photo" />
           </div>
           <div class="profile-info">
-            <h2>Jean-Romain Luttringer</h2>
+            <p class="profile-kicker">Academic profile</p>
+            <h1>Jean-Romain Luttringer</h1>
             <p>Assistant Professor at the University of Strasbourg</p>
-            <p>IUT Robert Schuman</p>
+            <p>IUT Robert Schuman, CS Department</p>
             <p>ICube Laboratory, Network Research Group</p>
             <div class="profile-contact">
               <button type="button" class="contact-button" onClick={openEmail}>
@@ -55,10 +56,10 @@ export default function Home() {
         <div class="content-column">
           <section class="biography-section">
             <p>
-              I am a <strong>Ph.D. in Computer Networks</strong> working as an <strong>Assistant Professor</strong> at the University of Strasbourg 
-              in the <strong>Networks Teams</strong> of the ICube laboratory. My work focuses on <strong>routing and network discovery</strong>, 
-              from inter-domain routing to intra-domain traffic engineering and Internet topology discovery.
-              I've taught <strong>~400h</strong> in the past 4 years (and thoroughly enjoyed doing so!).
+              I hold a <strong>Ph.D. in Computer Networks</strong> and work as an <strong>Assistant Professor</strong> at the University of Strasbourg,
+              in the <strong>Network Research Group</strong> of the ICube laboratory. My work focuses on <strong>routing and network discovery</strong>,
+              from inter-domain routing to intra-domain traffic engineering and Internet topology discovery. My courses cover computer networks,
+              routing protocols, software development, CI/CD, and network programming.
             </p>
           </section>
           
@@ -77,48 +78,47 @@ export default function Home() {
             <section class="education-section">
               <h3>Education</h3>
               <div class="education-item">
-                <h4><span class="graduation-cap">🎓</span> PhD in Computer Science</h4>
+                <h4>PhD in Computer Science</h4>
                 <p>University of Strasbourg, 2019-2022</p>
               </div>
               <div class="education-item">
-                <h4><span class="graduation-cap">🎓</span> MSc in Computer Networks and Embedded Systems</h4>
+                <h4>MSc in Computer Networks and Embedded Systems</h4>
                 <p>University of Strasbourg, 2019, with high honors</p>
               </div>
               <div class="education-item">
-                <h4><span class="graduation-cap">🎓</span> BSc in Maths and Computer Science</h4>
+                <h4>BSc in Mathematics and Computer Science</h4>
                 <p>University of Strasbourg, 2017, with honors</p>
               </div>
             </section>
           </div>
+
+          <section class="reviews-section" aria-labelledby="colleague-notes-heading">
+            <h2 id="colleague-notes-heading">Colleague Notes</h2>
+            <div class="reviews-container stagger-in">
+              <div class="review-card">
+                <p class="review-text">
+                  <em>"Sometimes has intuitions that can sometimes prove useful"</em>
+                </p>
+                <p class="reviewer">— Very esteemed colleague</p>
+              </div>
+              
+              <div class="review-card">
+                <p class="review-text">
+                  <em>"Almost as competent as he is funny"</em>
+                </p>
+                <p class="reviewer">— Esteemed colleague</p>
+              </div>
+              
+              <div class="review-card">
+                <p class="review-text">
+                  <em>"Just shy of being interesting"</em>
+                </p>
+                <p class="reviewer">— Very esteemed colleague</p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-      
-      {/* Reviews Section - Full Width */}
-      <section class="reviews-section">
-        <h2>What Colleagues Say</h2>
-        <div class="reviews-container stagger-in">
-          <div class="review-card">
-            <p class="review-text">
-              <em>"Sometimes has intuitions that can sometimes prove useful"</em>
-            </p>
-            <p class="reviewer">— Very esteemed colleague</p>
-          </div>
-          
-          <div class="review-card">
-            <p class="review-text">
-              <em>"Almost as competent as he is funny"</em>
-            </p>
-            <p class="reviewer">— Esteemed colleague</p>
-          </div>
-          
-          <div class="review-card">
-            <p class="review-text">
-              <em>"Just shy of being interesting"</em>
-            </p>
-            <p class="reviewer">— Very esteemed colleague</p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 /* Mentoring page styling */
 .mentoring-container {
-  max-width: 1000px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -14,10 +14,10 @@
 }
 
 .mentoring-section h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 1.45rem;
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.35rem;
 }
 
 .mentoring-section h2::after {
@@ -31,89 +31,79 @@
 }
 
 /* Students grid layout */
-.students-grid {
+.students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Student row styling */
+.student-row {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--space-grid);
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+  transition: background-color 0.15s ease;
 }
 
-/* Student card styling */
-.student-card {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border-light);
-  border-radius: var(--card-radius);
-  box-shadow: var(--shadow-sm);
-  padding: var(--space-card);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.student-row:hover {
+  background-color: var(--color-surface-alt);
 }
 
-.student-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+.student-row.is-current {
+  border-bottom-color: color-mix(in srgb, var(--color-accent) 32%, var(--color-border-light));
 }
 
-.student-card.is-current {
-  border-left: 3px solid var(--color-accent);
-  padding-left: calc(var(--space-card) - 2px);
-  background: linear-gradient(90deg, rgba(232, 117, 58, 0.06) 0%, var(--color-surface) 16%);
-  box-shadow: 0 0 0 1px rgba(232, 117, 58, 0.12), var(--shadow-sm);
-}
-
-.student-card.is-current .student-title {
+.student-row.is-current .student-title {
   color: var(--color-text);
 }
 
-.student-card:not(.is-current) {
-  filter: saturate(0.92);
+.student-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.32rem;
+  min-width: 0;
 }
 
-.student-topline {
+.student-main {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.35rem;
+  flex-direction: column;
+  min-width: 0;
 }
 
 .status-badge {
-  background-color: var(--color-accent-light);
+  background-color: transparent;
   color: var(--color-accent);
-  border: 1px solid rgba(232, 117, 58, 0.25);
-  padding: 0.14rem 0.45rem;
-  border-radius: 4px;
-  font-size: 0.68rem;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+  padding: 0.09rem 0.4rem;
+  border-radius: 999px;
+  font-size: 0.62rem;
   font-weight: 600;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.28px;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 .status-badge::before {
-  content: "";
-  display: inline-block;
-  width: 0.35rem;
-  height: 0.35rem;
-  border-radius: 50%;
-  background-color: var(--color-accent);
-  margin-right: 0.35rem;
-  vertical-align: middle;
+  content: none;
 }
 
 .student-title {
-  margin: 0 0 0.65rem 0;
-  font-size: 1.16rem;
-  line-height: 1.25;
+  margin: 0 0 0.22rem 0;
+  font-size: 1rem;
+  line-height: 1.34;
   color: var(--color-text);
 }
 
 .year-badge {
-  background-color: var(--color-border-light);
-  color: var(--color-text-secondary);
-  padding: 0.18rem 0.45rem;
-  border-radius: 4px;
+  background-color: transparent;
+  color: var(--color-text-muted);
+  padding: 0;
+  border-radius: 0;
   font-size: 0.74rem;
-  font-weight: 600;
-  margin-left: auto;
+  font-weight: 500;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
@@ -122,21 +112,22 @@
   color: var(--color-text-secondary);
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 0.6rem;
-  font-size: 0.96rem;
+  margin-bottom: 0.34rem;
+  font-size: 0.88rem;
 }
 
 .supervision {
   font-weight: normal;
-  font-style: italic;
-  font-size: 0.85rem;
+  font-style: normal;
+  font-size: 0.8rem;
   color: var(--color-text-muted);
 }
 
 .student-description {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   line-height: 1.5;
+  color: var(--color-text-secondary);
 }
 
 .student-description-muted {
@@ -146,12 +137,13 @@
 
 /* Empty card styling */
 .empty-card {
-  background-color: var(--color-surface-alt);
-  border: 2px dashed var(--color-border);
+  background-color: transparent;
+  border: 1px dashed var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  grid-template-columns: 1fr;
 }
 
 .empty-card p {
@@ -162,7 +154,9 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .students-grid {
+  .student-row {
     grid-template-columns: 1fr;
+    gap: 0.38rem;
+    padding: 0.75rem 0;
   }
 }

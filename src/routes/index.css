@@ -1,9 +1,9 @@
 /* Homepage grid layout */
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* 1/3 and 2/3 split */
-  gap: 2rem;
-  padding: 1rem 0; /* Reduced padding from 2rem to 1rem */
+  grid-template-columns: minmax(230px, 0.8fr) minmax(0, 2fr);
+  gap: 2.5rem;
+  padding: 1rem 0 0;
 }
 
 /* Profile column (left) */
@@ -17,14 +17,15 @@
 .profile-photo-container {
   width: 100%;
   max-width: 280px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
 }
 
 .profile-photo {
   width: 100%;
   height: auto;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  box-shadow: none;
   object-fit: cover;
   aspect-ratio: 1/1;
   background-color: var(--color-border);
@@ -34,9 +35,19 @@
   width: 100%;
 }
 
-.profile-info h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.8rem;
+.profile-kicker {
+  margin: 0 0 0.28rem;
+  color: var(--color-text-muted) !important;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.profile-info h1 {
+  margin: 0 0 0.55rem;
+  font-size: 1.65rem;
+  line-height: 1.2;
 }
 
 .profile-info p {
@@ -54,7 +65,7 @@
 
 .contact-button,
 .contact-reveal {
-  border-radius: 999px;
+  border-radius: 4px;
   padding: 0.5rem 0.95rem;
   font-size: 0.9rem;
   font-weight: 500;
@@ -97,18 +108,19 @@
 .content-column {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.7rem;
 }
 
 .biography-section {
-  margin-bottom: 1rem;
-  padding-top: 0.5rem;
+  margin: 0;
+  padding-top: 0.1rem;
 }
 
 .biography-section p {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-  font-size: 1.05rem;
+  max-width: 70ch;
+  margin: 0;
+  line-height: 1.68;
+  font-size: 1rem;
 }
 
 .biography-section p strong {
@@ -119,13 +131,13 @@
 .info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem; /* Reduced from 2rem */
+  gap: 1.8rem;
 }
 
 .interests-section h3,
 .education-section h3 {
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.22rem;
   position: relative;
   padding-bottom: 0.5rem;
 }
@@ -148,57 +160,53 @@
 }
 
 .interests-section li {
-  padding: 0.5rem 0;
-  padding-left: 1.5rem;
+  padding: 0.42rem 0;
+  padding-left: 1.15rem;
   position: relative;
+  color: var(--color-text-secondary);
+  font-size: 0.91rem;
 }
 
 .interests-section li:before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0.9rem;
-  width: 8px;
-  height: 8px;
+  top: 0.85rem;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background-color: var(--color-accent);
 }
 
 .education-item {
-  margin-bottom: 0.75rem; /* Reduced from 1.2rem */
+  margin-bottom: 0;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--color-border-light);
 }
 
 .education-item h4 {
-  margin-bottom: 0.3rem;
-  font-size: 1.1rem;
+  margin-bottom: 0.18rem;
+  font-size: 0.91rem;
   font-weight: 500;
-  display: flex;
-  align-items: center;
-}
-
-.graduation-cap {
-  display: inline-block;
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
 }
 
 .education-item p {
   margin: 0;
   color: var(--color-text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.82rem;
 }
 
 /* Reviews section styling */
 .reviews-section {
-  margin-top: 1.5rem; /* Reduced from 3rem */
-  padding-top: 1.5rem; /* Reduced from 2rem */
+  margin-top: 0.2rem;
+  padding-top: 1.35rem;
   border-top: 1px solid var(--color-border);
 }
 
 .reviews-section h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-  text-align: center;
+  margin-bottom: 0.9rem;
+  font-size: 1.25rem;
+  text-align: left;
   position: relative;
   padding-bottom: 0.5rem;
 }
@@ -207,47 +215,46 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
+  left: 0;
+  width: 42px;
   height: 2px;
   background-color: var(--color-accent);
 }
 
 .reviews-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-grid);
-  max-width: 960px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .review-card {
-  background-color: var(--color-surface);
-  padding: var(--space-card);
-  border-radius: var(--card-radius);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.8rem;
+  padding: 0.55rem 0 0.55rem 0.8rem;
+  border-left: 2px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border-light);
+  text-align: left;
 }
 
 .review-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+  border-left-color: var(--color-accent);
 }
 
 .review-text {
-  font-size: 1.1rem;
+  font-size: 0.92rem;
   color: var(--color-text-secondary);
-  margin-bottom: 1rem;
-  line-height: 1.5;
+  margin: 0;
+  line-height: 1.55;
 }
 
 .reviewer {
-  text-align: center;
-  font-size: 0.9rem;
+  text-align: left;
+  font-size: 0.76rem;
   color: var(--color-text-muted);
   margin: 0;
+  white-space: nowrap;
 }
 
 /* Responsive adjustments */
@@ -257,7 +264,7 @@
   }
   
   .profile-column {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
   
   .info-grid {
@@ -266,7 +273,13 @@
   }
   
   .reviews-container {
+    gap: 0.85rem;
+  }
+
+  .review-card {
     grid-template-columns: 1fr;
+    gap: 0.2rem;
+    border-bottom: none;
   }
 }
 

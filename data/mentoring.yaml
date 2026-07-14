@@ -1,12 +1,14 @@
 phdStudents: 
   - title: "Towards Eco-Efficient Autonomous Networks: Deep Programmability and Energy-Aware Routing Protocols"
     year: 2025-2028
+    ongoing: true
     name: "Florent Hardy"
     supervision: "co-supervision"
     description: "ANR JCJC Project GARDEN"
   
   - title: "Detection and Mitigation of Performance Anomalies in Core Networks"
     year: 2025-2028
+    ongoing: true
     name: "Maxime Friess"
     supervision: "co-supervision"
     description: "ANR TSIA Project TURFU"
@@ -14,6 +16,7 @@ phdStudents:
 master2Students:
   - title: "Study of Gray Failures in Computer Networks : Testbed and Diagnosis"
     year: 2026
+    ongoing: true
     name: "Céleste Kerlogot"
     supervision: "co-supervision"
     description: "Creation of a testbed to study gray failures in computer networks, and development of diagnosis techniques."
@@ -21,18 +24,21 @@ master2Students:
 
   - title: "Improving energy efficiency of (programmable) networks"
     year: 2025
+    ongoing: false
     name: "Florent Hardy"
     supervision: "co-supervision"
     description: "Working on the GARDEN ANR Project to develop and implement solutions for energy-efficient programmable networks."
   
   - title: "Symroute: an efficient, ECMP-aware fast reroute solution"
     year: 2025
+    ongoing: false
     name: "Maxime Friess"
     supervision: "co-supervision"
     description: "Developing and evaluating a fast reroute mechanism that works efficiently with Equal-Cost Multi-Path routing environments."
   
   - title: "Study of Gray Failures in Computer Networks : Taxonomy and Data Generation"
     year: 2025
+    ongoing: false
     name: "Amina Moalla"
     supervision: "co-supervision"
     description: ""
@@ -40,21 +46,25 @@ master2Students:
 master1Students:
   - title: "Investigating the use of Neuro-Symbolic AI within computer networks"
     year: 2025
+    ongoing: false
     name: "Céleste Kerlogot"
     description: ""
 
   - title: "GOFOR-SR: A general framework to compute path for segment routing"
     year: 2024
+    ongoing: false
     name: "Florent Hardy"
     description: "Developed a flexible framework for computing optimal paths in Segment Routing networks."
   
   - title: "Symroute"
     year: 2024
+    ongoing: false
     name: "Maxime Friess"
     description: "Worked on the development of Symroute, a fast reroute solution for network resilience."
   
   - title: "Implementation of Best2cop"
     year: 2020
+    ongoing: false
     name: "Thomas Alfroy"
     description: "Implemented the Best2cop algorithm for computing Delay Constrained, Least Cost paths for Segment Routing."
 

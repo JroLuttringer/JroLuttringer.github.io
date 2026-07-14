@@ -5,6 +5,7 @@ export type Student = {
   title: string;
   name: string;
   year: string;
+  ongoing: boolean;
   supervision?: string;
   description: string;
 };

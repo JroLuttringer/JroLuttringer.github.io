@@ -5,63 +5,69 @@ export const prerender = true;
 
 export default function Activities() {
   return (
-    <div class="container page-enter">
+    <div class="container page-shell page-enter">
       <Title>Other Activities - Jean-Romain Luttringer</Title>
-      <h1>Other Activities</h1>
+      <header class="page-heading fade-in">
+        <p class="page-kicker">Service</p>
+        <h1>Other Activities</h1>
+        <p class="page-summary">
+          Community organization, academic service, and peer-review activities.
+        </p>
+      </header>
       
       <div class="activities-container">
         <section class="activities-section">
           <h2>Conference Organization</h2>
-          <div class="activities-grid stagger-in">
-            <div class="activity-card">
-              <div class="activity-content">
-                <h3>🌐 IMC 2022 Conference</h3>
-                <span class="activity-year">2022</span>
-                <p>International conference on Internet measurements. On-site organization, designed posters.</p>
+          <div class="activities-list stagger-in">
+            <article class="activity-row">
+              <div class="activity-meta">2022</div>
+              <div class="activity-main">
+                <h3>IMC 2022 Conference</h3>
+                <p>International conference on Internet measurements. On-site organization and poster design.</p>
               </div>
-            </div>
+            </article>
             
-            <div class="activity-card">
-              <div class="activity-content">
-                <h3>🎓 RESCOM 2021 Autumn School</h3>
-                <span class="activity-year">2021</span>
-                <p>Autumn school on reproducibility. On-site help.</p>
+            <article class="activity-row">
+              <div class="activity-meta">2021</div>
+              <div class="activity-main">
+                <h3>RESCOM 2021 Autumn School</h3>
+                <p>Autumn school on reproducibility. On-site support.</p>
               </div>
-            </div>
+            </article>
             
-            <div class="activity-card">
-              <div class="activity-content">
-                <h3>🌐 OPODIS 2021</h3>
-                <span class="activity-year">2021</span>
-                <p>International conference on distributed systems. On-site help.</p>
+            <article class="activity-row">
+              <div class="activity-meta">2021</div>
+              <div class="activity-main">
+                <h3>OPODIS 2021</h3>
+                <p>International conference on distributed systems. On-site support.</p>
               </div>
-            </div>
+            </article>
           </div>
         </section>
         
         <section class="activities-section">
           <h2>Academic Service</h2>
-          <div class="activities-grid stagger-in">
-            <div class="activity-card">
-              <div class="activity-content">
-                <h3>👥 Network Team PhD Students Representative</h3>
-                <span class="activity-year">2021 – 2022</span>
-                <p>Link between Ph.D. student and laboratory direction during counsel meetings.</p>
+          <div class="activities-list stagger-in">
+            <article class="activity-row">
+              <div class="activity-meta">2021-2022</div>
+              <div class="activity-main">
+                <h3>Network Team PhD Students Representative</h3>
+                <p>Liaison between PhD students and laboratory management during council meetings.</p>
               </div>
-            </div>
+            </article>
           </div>
         </section>
         
         <section class="activities-section">
           <h2>Reviews & Scientific Contributions</h2>
-          <div class="review-container">
-            <div class="review-highlight">
-              <div class="review-badge">TPC</div>
+          <div class="service-panel">
+            <div class="service-highlight">
+              <span class="service-tag">TPC</span>
               <h3>Member of TPC for Algotel/Cores 2025</h3>
             </div>
             
-            <h3>Occasional reviewer for:</h3>
-            <div class="journal-grid">
+            <h3 class="service-subtitle">Occasional reviewer for</h3>
+            <div class="journal-grid stagger-in">
               <div class="journal-item">IEEE Communication Letters</div>
               <div class="journal-item">IEEE TNSM</div>
               <div class="journal-item">IEEE TSAE</div>

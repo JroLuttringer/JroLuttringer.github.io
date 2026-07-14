@@ -5,13 +5,19 @@ export const prerender = true;
 
 export default function Projects() {
   return (
-    <div class="container page-enter">
+    <div class="container page-shell page-enter">
       <Title>Projects - Jean-Romain Luttringer</Title>
-      <h1>Research Projects</h1>
+      <header class="page-heading fade-in">
+        <p class="page-kicker">Programs</p>
+        <h1>Research Projects</h1>
+        <p class="page-summary">
+          Funded research programs.
+        </p>
+      </header>
       
       <div class="projects-container stagger-in">
         {/* Project as Lead */}
-        <div class="project-card lead-project">
+        <article class="project-dossier lead-project">
           <div class="project-header">
             <div>
               <h2>GARDEN</h2>
@@ -58,10 +64,10 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </div>
+        </article>
         
         {/* Project as Collaborator */}
-        <div class="project-card collaborator-project">
+        <article class="project-dossier collaborator-project">
           <div class="project-header">
             <div>
               <h2>TURFU</h2>
@@ -108,7 +114,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   );

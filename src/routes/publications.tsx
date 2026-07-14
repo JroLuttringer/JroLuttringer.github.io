@@ -485,9 +485,9 @@ export default function PublicationsPage() {
     
     return (
       <div class="publication-type-section">
-        <h2 class="text-xl font-semibold mt-6 mb-4">{typeInfo.title}</h2>
+        <h2>{typeInfo.title}</h2>
         {publications.map((pub) => (
-          <div class={`card publication-card ${typeInfo.buttonClass}`}>
+          <article class={`publication-entry ${typeInfo.buttonClass}`}>
             <h3>{pub.title}</h3>
             <Show when={pub.awards && pub.awards.length > 0}>
               <div class="award-badges">
@@ -496,14 +496,14 @@ export default function PublicationsPage() {
                 ))}
               </div>
             </Show>
-            <p>
-              {/* Display venue, editor, and year on a single line */}
+            <p class="publication-venue-line">
               <em>
                 {pub.venue}
                 {pub.editor && ` • ${pub.editor}`}
                 {pub.year && ` • ${pub.year}`}
               </em>
-              <br />
+            </p>
+            <p class="publication-authors">
               {pub.authors.join(", ")}
             </p>
             <div class="publication-links">
@@ -518,7 +518,7 @@ export default function PublicationsPage() {
                 </a>
               ))}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     );
@@ -528,9 +528,15 @@ export default function PublicationsPage() {
   const [showAdvancedFilters, setShowAdvancedFilters] = createSignal(false);
 
   return (
-    <main class="container p-4 page-enter">
+    <main class="container page-shell page-enter">
       <Title>Publications - Jean-Romain Luttringer</Title>
-      <h1 class="text-2xl font-bold mb-6">Publications</h1>
+      <header class="page-heading fade-in">
+        <p class="page-kicker">Research Output</p>
+        <h1>Publications</h1>
+        {/* <p class="page-summary">
+          An indexed bibliography by year and publication type, with filtering by topic, venue, and collaborators.
+        </p> */}
+      </header>
       
       {/* Publications Statistics Chart */}
       <div class="publications-chart">
@@ -686,7 +692,7 @@ export default function PublicationsPage() {
         Object.entries(filteredPublicationsByYear())
           .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA)) // Sort years descending
           .map(([year, yearPubs]) => (
-          <section style="margin-bottom: 3rem;">
+          <section class="publication-year-group">
             <div class="year-divider">
               <div class="year-line"></div>
               <span class="year-label">{year}</span>
