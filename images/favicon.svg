@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- edges from top orange node -->
+  <line x1="8" y1="3" x2="3" y2="9"  stroke="#e8622a" stroke-width="0.9" opacity="0.55"/>
+  <line x1="8" y1="3" x2="13" y2="9" stroke="#e8622a" stroke-width="0.9" opacity="0.55"/>
+  <!-- lower edges, muted -->
+  <line x1="3" y1="9"  x2="8" y2="14" stroke="#c8c3bc" stroke-width="0.8"/>
+  <line x1="13" y1="9" x2="8" y2="14" stroke="#c8c3bc" stroke-width="0.8"/>
+  <line x1="3" y1="9"  x2="13" y2="9" stroke="#c8c3bc" stroke-width="0.8"/>
+  <!-- top node: orange -->
+  <circle cx="8" cy="3" r="2.2" fill="#e8622a"/>
+  <!-- secondary nodes -->
+  <circle cx="3"  cy="9"  r="1.7" fill="#f0ede8" stroke="#9a8880" stroke-width="1.1"/>
+  <circle cx="3"  cy="9"  r="0.65" fill="#9a8880"/>
+  <circle cx="13" cy="9"  r="1.7" fill="#f0ede8" stroke="#9a8880" stroke-width="1.1"/>
+  <circle cx="13" cy="9"  r="0.65" fill="#9a8880"/>
+  <circle cx="8"  cy="14" r="1.7" fill="#f0ede8" stroke="#9a8880" stroke-width="1.1"/>
+  <circle cx="8"  cy="14" r="0.65" fill="#9a8880"/>
+</svg>
