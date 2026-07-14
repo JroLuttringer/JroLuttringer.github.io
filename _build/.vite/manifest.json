@@ -84,7 +84,7 @@
     ]
   },
   "src/routes/courses.tsx?pick=default&pick=$css": {
-    "file": "assets/courses-C6mQxiHm.js",
+    "file": "assets/courses-CN5fv9xM.js",
     "name": "courses",
     "src": "src/routes/courses.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -95,7 +95,7 @@
       "_js-yaml-mbYHt68G.js"
     ],
     "css": [
-      "assets/courses-CDhrTtNX.css"
+      "assets/courses-B66XIO4g.css"
     ]
   },
   "src/routes/experience.tsx?pick=default&pick=$css": {
@@ -217,7 +217,7 @@
     ]
   },
   "src/routes/tools.tsx?pick=default&pick=$css": {
-    "file": "assets/tools-BpsCHtdB.js",
+    "file": "assets/tools-B3khorky.js",
     "name": "tools",
     "src": "src/routes/tools.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -232,7 +232,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-BX896yee.js",
+    "file": "assets/client-c5YYK2a-.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
