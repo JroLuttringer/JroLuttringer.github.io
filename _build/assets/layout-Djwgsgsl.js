@@ -1,1 +1,0 @@
-import{b as a,t as e,j as o}from"./web-YBJNgLqY.js";import{N as n}from"./Navbar-DLgZKuM5.js";var m=e("<main>");function s(r){return[a(n,{}),(()=>{var t=m();return o(t,()=>r.children),t})()]}export{s as default};
