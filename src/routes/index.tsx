@@ -93,7 +93,7 @@ export default function Home() {
           </div>
 
           <section class="reviews-section" aria-labelledby="colleague-notes-heading">
-            <h2 id="colleague-notes-heading">Colleague Notes</h2>
+            <h2 id="colleague-notes-heading">What Colleagues Say</h2>
             <div class="reviews-container stagger-in">
               <div class="review-card">
                 <p class="review-text">
